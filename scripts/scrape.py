@@ -280,10 +280,47 @@ def src_slickdeals():
     return out
 
 
+def src_hip2save():
+    """Hip2Save (WordPress) exposes search results as RSS — no API needed."""
+    queries = ["ulta", "sephora", "beauty deal"]
+    out, seen, ok = [], set(), 0
+    last_err = None
+    for q in queries:
+        url = f"https://hip2save.com/?s={urllib.parse.quote_plus(q)}&feed=rss2"
+        try:
+            root = ET.fromstring(fetch(url))
+            for el in root.iter("item"):
+                title = (el.findtext("title") or "").strip()
+                link = (el.findtext("link") or "").strip()
+                pub = (el.findtext("pubDate") or "").strip()
+                if not title or link in seen:
+                    continue
+                seen.add(link)
+                try:
+                    created = time.mktime(time.strptime(pub[:25], "%a, %d %b %Y %H:%M:%S"))
+                except Exception:
+                    created = time.time()
+                it = item("Hip2Save", title, link, created)
+                if keep(it):
+                    out.append(it)
+            ok += 1
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            log(f"  hip2save '{q}' failed: {e}")
+        time.sleep(1)
+    if not ok:
+        raise RuntimeError(f"all hip2save queries failed: {last_err}")
+    log(f"  hip2save: {len(out)} kept across {ok} queries")
+    return out
+
+
 SOURCES = {
+    # Reddit is optional: it only works if REDDIT_CLIENT_ID/SECRET secrets are
+    # ever added. Without them it fails quietly and costs nothing.
     "reddit_muaonthecheap": lambda: src_reddit("MUAontheCheap"),
     "reddit_ulta":          lambda: src_reddit("Ulta", listing="hot", default_retailer="Ulta"),
     "slickdeals":           src_slickdeals,
+    "hip2save":             src_hip2save,
 }
 
 

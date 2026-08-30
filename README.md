@@ -28,17 +28,16 @@ Settings → Actions → General → Workflow permissions → **Read and write**
   top-up, so it stays fresh even if a source blocks GitHub's servers.
 - Favorites (★) are saved on the device.
 
-## Unlocking the Reddit sources (one-time, ~3 min)
+## Sources
 
-Reddit blocks GitHub's servers, so the Action needs free official API creds:
+Active with zero setup: **Slickdeals** (search RSS) and **Hip2Save** (search RSS)
+across Ulta, Sephora, Costco, Target and more.
 
-1. Log into reddit.com → https://www.reddit.com/prefs/apps → **create another app**.
-2. Name: `ultraulta` · type: **script** · redirect uri: `http://localhost` → Create.
-3. Copy the ID under the app name (client id) and the **secret**.
-4. Repo → Settings → Secrets and variables → **Actions** → New repository secret:
-   - `REDDIT_CLIENT_ID` = the id
-   - `REDDIT_CLIENT_SECRET` = the secret
-5. Re-run the Refresh deals workflow — the log should say "reddit: got API token".
+**Reddit (optional, dormant):** reddit.com blocks GitHub's servers and gates its
+API behind a registration request. If that request is ever approved, create a
+"script" app at reddit.com/prefs/apps and add repo secrets `REDDIT_CLIENT_ID`
+and `REDDIT_CLIENT_SECRET` — r/MUAontheCheap and r/Ulta light up on the next
+run. Until then those two sources fail quietly and cost nothing.
 
 ## Tuning
 
