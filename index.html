@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UltraUlta</title>
+<meta name="description" content="Every live Ulta deal, and which ones stack.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="UltraUlta">
+<meta name="theme-color" content="#F3F7FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121A2B" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,100&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ground:#F3F7FC; --card:#FFFFFF; --ink:#1E2A45; --ink-soft:#5D6C8C;
+  --accent:#3D6BD6; --accent-ink:#2E56B8; --wash:#E2EBFA; --line:#C9D8F0;
+  --stack:#3F7A5A; --stack-wash:#E1F0E7; --gold:#B98A2E;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ground:#121A2B; --card:#1B2539; --ink:#E8EEF9; --ink-soft:#93A4C4;
+    --accent:#7D9FF0; --accent-ink:#98B3F5; --wash:#25314D; --line:#344361;
+    --stack:#7FC49B; --stack-wash:#25392F; --gold:#D9AE5E;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"Figtree",system-ui,-apple-system,sans-serif;
+  font-size:16px; line-height:1.5; margin:0;
+  padding:calc(env(safe-area-inset-top) + 14px) 16px calc(env(safe-area-inset-bottom) + 60px);
+}
+.wrap{max-width:560px;margin:0 auto}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:6px 0 4px}
+.brand{
+  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 100;
+  font-weight:600;font-size:30px;letter-spacing:-.01em;
+}
+.brand span{color:var(--accent)}
+.updated{font-size:12px;color:var(--ink-soft);text-align:right}
+.updated button{
+  border:0;background:none;color:var(--accent-ink);font:inherit;font-weight:700;
+  cursor:pointer;padding:2px 0 0;display:block;margin-left:auto;
+}
+.banner{
+  background:var(--wash);border:1px solid var(--line);border-radius:14px;
+  padding:10px 14px;font-size:13.5px;color:var(--ink-soft);margin:10px 0 2px;
+}
+.banner b{color:var(--ink)}
+h2{
+  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 100;
+  font-weight:600;font-size:20px;margin:26px 0 10px;display:flex;align-items:center;gap:8px;
+}
+h2 .n{
+  font-family:"Figtree";font-size:12px;font-weight:700;color:var(--accent-ink);
+  background:var(--wash);border-radius:99px;padding:2px 9px;
+}
+.stack-card{
+  background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:15px 16px;margin-bottom:10px;
+}
+.stack-card.fav{border-color:var(--gold)}
+.stack-top{display:flex;align-items:center;gap:8px}
+.stack-brand{font-weight:700;font-size:17px;flex:1}
+.star{
+  border:0;background:none;font-size:19px;cursor:pointer;padding:2px 4px;
+  color:var(--line);line-height:1;
+}
+.star.on{color:var(--gold)}
+.badge{
+  font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  background:var(--stack-wash);color:var(--stack);padding:3px 9px;border-radius:99px;white-space:nowrap;
+}
+.tchips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 2px}
+.tchip{
+  font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;
+  background:var(--wash);color:var(--accent-ink);
+}
+.stack-links{margin:8px 0 0;padding:0;list-style:none}
+.stack-links li{padding:3px 0;font-size:13.5px}
+.stack-links a{color:var(--ink);text-decoration:none}
+.stack-links a:hover{color:var(--accent-ink)}
+.stack-links .src{color:var(--ink-soft);font-size:12px}
+.stack-links li::before{content:"↗";color:var(--accent);margin-right:7px;font-size:12px}
+.filters{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.f{
+  border:1.5px solid var(--line);background:var(--card);color:var(--ink-soft);
+  font:600 13px "Figtree";padding:6px 13px;border-radius:99px;cursor:pointer;white-space:nowrap;
+}
+.f.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.deal{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:12px 14px;margin-bottom:8px;display:block;text-decoration:none;color:var(--ink);
+}
+.deal:active{background:var(--wash)}
+.deal-title{font-size:14.5px;font-weight:500;line-height:1.4}
+.deal-meta{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-top:7px}
+.deal-meta .src{font-size:11.5px;color:var(--ink-soft);font-weight:600;margin-right:2px}
+.deal-meta .ago{font-size:11.5px;color:var(--ink-soft);margin-left:auto}
+.bchip{
+  font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;
+  background:var(--ground);border:1px solid var(--line);color:var(--ink-soft);
+}
+.empty{color:var(--ink-soft);font-size:14px;padding:14px 4px}
+footer{margin-top:34px;font-size:12px;color:var(--ink-soft);text-align:center;line-height:1.7}
+.heart{color:var(--accent)}
+button:focus-visible,.f:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Ultra<span>Ulta</span></div>
+    <div class="updated"><span id="updated">loading…</span><button id="refresh" type="button">refresh ↻</button></div>
+  </header>
+  <div id="banner"></div>
+  <h2>Stacking now <span class="n" id="stackCount"></span></h2>
+  <div id="stacks"><div class="empty">Looking for overlaps…</div></div>
+  <h2>Latest finds <span class="n" id="dealCount"></span></h2>
+  <div class="filters" id="filters"></div>
+  <div id="deals"></div>
+  <footer>Deals surface from r/MUAontheCheap, r/Ulta &amp; Slickdeals — always double-check the cart.<br>Homemade with <span class="heart">♥</span> · tap the ☆ on a brand to pin it</footer>
+</div>
+
+<script>
+"use strict";
+/* ---------- shared tagging logic (mirrors scripts/scrape.py) ---------- */
+const BRANDS = ["anastasia beverly hills","abh","bare minerals","bareminerals","benefit","billie eilish","biolage","black girl sunscreen","bubble","charlotte tilbury","cerave","cetaphil","clinique","cosrx","dermalogica","drybar","dyson","e.l.f.","elf cosmetics","elemis","essence","estee lauder","estée lauder","fenty","first aid beauty","florence by mills","good molecules","grande cosmetics","hempz","igk","it cosmetics","joico","juvia's place","kenra","kvd","lancome","lancôme","laneige","la roche-posay","l'oreal","l'oréal","mac cosmetics"," mac ","mario badescu","maybelline","mielle","morphe","murad","nars","native","naturium","not your mother's","nyx","ogx","olaplex","opi","the ordinary","pacifica","paula's choice","peach & lily","philosophy","pixi","redken","revlon","sol de janeiro","strivectin","sun bum","supergoop","tarte","tatcha","too faced","tree hut","truly","ulta beauty collection","urban decay","wet n wild","wet n' wild","shark","t3 micro"," t3 ","hot tools","chi ","bio ionic","conair","kylie","rare beauty","r.e.m. beauty","about-face","half magic","polite society","beautyblender","real techniques","eos","batiste","clairol","garnier","neutrogena","no7","physicians formula","covergirl","milani","colourpop","profusion","kiss","ardell"];
+const ALIAS = {"abh":"Anastasia Beverly Hills","elf cosmetics":"e.l.f.","e.l.f.":"e.l.f.","bareminerals":"Bare Minerals","estée lauder":"Estee Lauder","lancôme":"Lancome","l'oréal":"L'Oreal","wet n' wild":"Wet N Wild","mac cosmetics":"MAC"," mac ":"MAC","t3 micro":"T3"," t3 ":"T3","chi ":"CHI","opi":"OPI","nyx":"NYX","ogx":"OGX","nars":"NARS","igk":"IGK","kvd":"KVD","cosrx":"COSRX","eos":"eos"};
+const TYPES = {
+  "% off":/\b\d{1,2}\s?%\s?off\b/i,
+  "$ off":/\$\s?\d+(\.\d+)?\s?off\b|\boff\s\$\d+/i,
+  "Free gift":/\bgwp\b|gift with purchase|free\s.{0,25}?\b(gift|bag|sample|pc|piece|mini)\b/i,
+  "Points":/\b\d+\s?x\s?points\b|\bpoints?\s(multiplier|event)\b|\bbonus points\b/i,
+  "BOGO":/\bbogo\b|buy one,?\s?get one|\bb1g1\b|\bb2g\d\b/i,
+  "Coupon":/\bcoupon\b|promo code|\bcode\s[A-Z0-9]{4,}\b/,
+  "Sale":/\bsale\b|\bclearance\b|\bdaily deals?\b|21 days of beauty|gorgeous hair event|jumbo|liter/i
+};
+const title = s => s.replace(/\w\S*/g, t => t[0].toUpperCase()+t.slice(1).toLowerCase()).replace(/'S\b/g,"'s");
+const tagBrands = t => { const low = " "+t.toLowerCase()+" ", out=[];
+  for (const b of BRANDS) if (low.includes(b)) { const n = ALIAS[b] || title(b.trim()); if (!out.includes(n)) out.push(n); }
+  return out; };
+const tagTypes = t => Object.keys(TYPES).filter(k => TYPES[k].test(t));
+const MAX_AGE = 21*86400;
+
+/* ---------- state ---------- */
+let items = [], meta = {}, filter = "All";
+let favs = [];
+try { favs = JSON.parse(localStorage.getItem("uu_favs")||"[]"); } catch(e){}
+const saveFavs = () => { try { localStorage.setItem("uu_favs", JSON.stringify(favs)); } catch(e){} };
+
+const ago = ts => { const s = Date.now()/1000 - ts;
+  if (s < 3600) return Math.max(1,Math.round(s/60))+"m ago";
+  if (s < 86400) return Math.round(s/3600)+"h ago";
+  return Math.round(s/86400)+"d ago"; };
+const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- stacks ---------- */
+function findStacks(list){
+  const cutoff = Date.now()/1000 - MAX_AGE, byBrand = {};
+  for (const it of list){ if (it.created < cutoff) continue;
+    for (const b of it.brands) (byBrand[b] = byBrand[b] || []).push(it); }
+  const out = [];
+  for (const [brand, its] of Object.entries(byBrand)){
+    const types = [...new Set(its.flatMap(i => i.type_labels))];
+    if (types.length >= 2 || its.length >= 2)
+      out.push({brand, types, items: its.slice(0,4), latest: Math.max(...its.map(i=>i.created))});
+  }
+  out.sort((a,b) => (favs.includes(b.brand)-favs.includes(a.brand)) || (b.types.length-a.types.length) || (b.latest-a.latest));
+  return out;
+}
+
+/* ---------- render ---------- */
+function render(){
+  const stacks = findStacks(items);
+  document.getElementById("stackCount").textContent = stacks.length;
+  document.getElementById("stacks").innerHTML = stacks.length ? stacks.map(s => `
+    <div class="stack-card${favs.includes(s.brand)?" fav":""}">
+      <div class="stack-top">
+        <span class="stack-brand">${esc(s.brand)}</span>
+        <span class="badge">${s.types.length>1 ? s.types.length+" offer types" : s.items.length+" mentions"}</span>
+        <button class="star${favs.includes(s.brand)?" on":""}" data-b="${esc(s.brand)}" aria-label="pin ${esc(s.brand)}">${favs.includes(s.brand)?"★":"☆"}</button>
+      </div>
+      <div class="tchips">${s.types.map(t=>`<span class="tchip">${t}</span>`).join("")}</div>
+      <ul class="stack-links">${s.items.map(i=>`<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a> <span class="src">· ${esc(i.source)} · ${ago(i.created)}</span></li>`).join("")}</ul>
+    </div>`).join("")
+    : `<div class="empty">No overlapping promos spotted right now — check Latest finds below.</div>`;
+  document.querySelectorAll(".star").forEach(b => b.onclick = () => {
+    const br = b.dataset.b;
+    favs = favs.includes(br) ? favs.filter(x=>x!==br) : [...favs, br];
+    saveFavs(); render();
+  });
+
+  const names = ["All", ...Object.keys(TYPES)];
+  document.getElementById("filters").innerHTML = names.map(n =>
+    `<button class="f${n===filter?" on":""}" data-f="${n}">${n}</button>`).join("");
+  document.querySelectorAll(".f").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
+
+  const shown = items.filter(i => filter==="All" || i.type_labels.includes(filter)).slice(0,80);
+  document.getElementById("dealCount").textContent = shown.length;
+  document.getElementById("deals").innerHTML = shown.length ? shown.map(i => `
+    <a class="deal" href="${esc(i.url)}" target="_blank" rel="noopener">
+      <div class="deal-title">${esc(i.title)}</div>
+      <div class="deal-meta"><span class="src">${esc(i.source)}</span>
+        ${i.brands.slice(0,3).map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}
+        ${i.type_labels.slice(0,3).map(t=>`<span class="tchip">${t}</span>`).join("")}
+        <span class="ago">${ago(i.created)}</span></div>
+    </a>`).join("")
+    : `<div class="empty">Nothing under that filter right now.</div>`;
+
+  document.getElementById("updated").textContent = meta.when ? "updated "+ago(meta.when) : "";
+  document.getElementById("banner").innerHTML = meta.sample
+    ? `<div class="banner"><b>Sample data.</b> Real deals appear automatically after the first refresh run finishes on GitHub.</div>` : "";
+}
+
+/* ---------- data ---------- */
+function absorb(newItems){
+  const seen = new Set(items.map(i=>i.url));
+  for (const it of newItems) if (!seen.has(it.url)) { seen.add(it.url); items.push(it); }
+  items.sort((a,b)=>b.created-a.created);
+}
+
+async function loadBaked(){
+  try {
+    const d = await (await fetch("data/deals.json?t="+Date.now())).json();
+    meta.sample = d.sample; meta.when = Date.parse(d.generated_at)/1000;
+    absorb(d.items||[]); render();
+  } catch(e){ document.getElementById("updated").textContent = "couldn't load data"; }
+}
+
+/* Live top-up straight from Reddit — works from the phone even when
+   GitHub's servers get rate-limited. Best effort; failures are silent. */
+async function loadLive(){
+  const subs = [["MUAontheCheap","new"],["Ulta","hot"]];
+  let got = false;
+  for (const [sub, listing] of subs){
+    try {
+      const d = await (await fetch(`https://www.reddit.com/r/${sub}/${listing}.json?limit=40&raw_json=1`)).json();
+      for (const c of d.data.children){
+        const p = c.data, t = p.title||"";
+        if (sub!=="Ulta" && !t.toLowerCase().includes("ulta")) continue;
+        absorb([{ url:"https://www.reddit.com"+p.permalink, title:t, source:"r/"+sub,
+                  created:p.created_utc, brands:tagBrands(t), type_labels:tagTypes(t) }]);
+      }
+      got = true;
+    } catch(e){}
+  }
+  if (got){ meta.when = Date.now()/1000; if (items.some(i=>!i.url.includes("example.com"))) meta.sample = false;
+    items = items.filter(i=>!i.url.includes("example.com") || meta.sample); render(); }
+}
+
+document.getElementById("refresh").onclick = () => { loadLive(); };
+loadBaked().then(loadLive);
+</script>
+</body>
+</html>

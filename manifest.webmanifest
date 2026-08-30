@@ -1,0 +1,14 @@
+{
+  "name": "UltraUlta",
+  "short_name": "UltraUlta",
+  "description": "Every live Ulta deal, and which ones stack.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F3F7FC",
+  "theme_color": "#3D6BD6",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

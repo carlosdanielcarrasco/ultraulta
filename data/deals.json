@@ -1,0 +1,232 @@
+{
+ "app": "UltraUlta",
+ "sample": true,
+ "generated_at": "2026-08-30T21:46:48+00:00",
+ "sources": {
+  "reddit_muaonthecheap": {
+   "ok": null,
+   "count": 0,
+   "note": "sample mode"
+  },
+  "reddit_ulta": {
+   "ok": null,
+   "count": 0,
+   "note": "sample mode"
+  },
+  "slickdeals": {
+   "ok": null,
+   "count": 0,
+   "note": "sample mode"
+  }
+ },
+ "items": [
+  {
+   "id": "r/MUAontheCheap:9041591748",
+   "source": "r/MUAontheCheap",
+   "title": "Ulta 20% off prestige coupon is live through Saturday (exclusions apply)",
+   "url": "https://example.com/0",
+   "created": 1788122808,
+   "score": 0,
+   "brands": [],
+   "types": [
+    "percent_off",
+    "coupon"
+   ],
+   "type_labels": [
+    "% off",
+    "Coupon"
+   ]
+  },
+  {
+   "id": "r/Ulta:7403119179",
+   "source": "r/Ulta",
+   "title": "PSA: 5x points on all haircare stacks with the liter sale \u2014 Redken liters basically 60% off",
+   "url": "https://example.com/2",
+   "created": 1788121008,
+   "score": 0,
+   "brands": [
+    "Redken"
+   ],
+   "types": [
+    "percent_off",
+    "points",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Points",
+    "Sale"
+   ]
+  },
+  {
+   "id": "r/MUAontheCheap:6149049484",
+   "source": "r/MUAontheCheap",
+   "title": "Ulta Gorgeous Hair Event: Redken + Biolage liters up to 50% off this week",
+   "url": "https://example.com/1",
+   "created": 1788119208,
+   "score": 0,
+   "brands": [
+    "Biolage",
+    "Redken"
+   ],
+   "types": [
+    "percent_off",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Sale"
+   ]
+  },
+  {
+   "id": "Slickdeals:7207709327",
+   "source": "Slickdeals",
+   "title": "Ulta Beauty: Tarte free 6-pc gift with $40 purchase + BOGO 50% off",
+   "url": "https://example.com/3",
+   "created": 1788036408,
+   "score": 0,
+   "brands": [
+    "Tarte"
+   ],
+   "types": [
+    "percent_off",
+    "gwp",
+    "bogo"
+   ],
+   "type_labels": [
+    "% off",
+    "Free gift",
+    "BOGO"
+   ]
+  },
+  {
+   "id": "r/Ulta:2843369103",
+   "source": "r/Ulta",
+   "title": "Sol de Janeiro GWP + $10 off $50 coupon worked together for me online",
+   "url": "https://example.com/4",
+   "created": 1787926408,
+   "score": 0,
+   "brands": [
+    "Sol De Janeiro"
+   ],
+   "types": [
+    "dollar_off",
+    "gwp",
+    "coupon"
+   ],
+   "type_labels": [
+    "$ off",
+    "Free gift",
+    "Coupon"
+   ]
+  },
+  {
+   "id": "Slickdeals:4875492816",
+   "source": "Slickdeals",
+   "title": "Ulta: e.l.f. sale 30% off + free shipping over $35",
+   "url": "https://example.com/5",
+   "created": 1787826408,
+   "score": 0,
+   "brands": [
+    "e.l.f."
+   ],
+   "types": [
+    "percent_off",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Sale"
+   ]
+  }
+ ],
+ "stacks": [
+  {
+   "brand": "Redken",
+   "count": 2,
+   "types": [
+    "percent_off",
+    "points",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Points",
+    "Sale"
+   ],
+   "item_ids": [
+    "r/Ulta:7403119179",
+    "r/MUAontheCheap:6149049484"
+   ],
+   "latest": 1788121008
+  },
+  {
+   "brand": "Tarte",
+   "count": 1,
+   "types": [
+    "bogo",
+    "gwp",
+    "percent_off"
+   ],
+   "type_labels": [
+    "BOGO",
+    "Free gift",
+    "% off"
+   ],
+   "item_ids": [
+    "Slickdeals:7207709327"
+   ],
+   "latest": 1788036408
+  },
+  {
+   "brand": "Sol De Janeiro",
+   "count": 1,
+   "types": [
+    "coupon",
+    "dollar_off",
+    "gwp"
+   ],
+   "type_labels": [
+    "Coupon",
+    "$ off",
+    "Free gift"
+   ],
+   "item_ids": [
+    "r/Ulta:2843369103"
+   ],
+   "latest": 1787926408
+  },
+  {
+   "brand": "Biolage",
+   "count": 1,
+   "types": [
+    "percent_off",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Sale"
+   ],
+   "item_ids": [
+    "r/MUAontheCheap:6149049484"
+   ],
+   "latest": 1788119208
+  },
+  {
+   "brand": "e.l.f.",
+   "count": 1,
+   "types": [
+    "percent_off",
+    "sale"
+   ],
+   "type_labels": [
+    "% off",
+    "Sale"
+   ],
+   "item_ids": [
+    "Slickdeals:4875492816"
+   ],
+   "latest": 1787826408
+  }
+ ]
+}
