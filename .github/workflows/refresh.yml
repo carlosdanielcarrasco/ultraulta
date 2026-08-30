@@ -21,6 +21,9 @@ jobs:
           ref: main           # always scrape from the latest code, even on re-runs
 
       - name: Scrape deals
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: python3 scripts/scrape.py
 
       - name: Commit fresh data

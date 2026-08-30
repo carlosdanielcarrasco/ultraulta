@@ -96,10 +96,21 @@ h2 .n{
 .f.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .deal{
   background:var(--card);border:1px solid var(--line);border-radius:16px;
-  padding:12px 14px;margin-bottom:8px;display:block;text-decoration:none;color:var(--ink);
+  padding:12px 14px;margin-bottom:8px;display:block;color:var(--ink);
 }
-.deal:active{background:var(--wash)}
 .deal-title{font-size:14.5px;font-weight:500;line-height:1.4}
+.deal-actions{display:flex;gap:8px;align-items:center;margin-top:9px;flex-wrap:wrap}
+.shop-btn{
+  display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+  font-size:12.5px;font-weight:700;padding:6px 13px;border-radius:99px;
+}
+.shop-btn:active{background:var(--accent-ink)}
+.thread-link{font-size:12px;color:var(--ink-soft);text-decoration:none;font-weight:600}
+.thread-link:hover{color:var(--accent-ink)}
+.rchip{
+  font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:2px 8px;border-radius:99px;
+  background:var(--ground);border:1px solid var(--accent);color:var(--accent-ink);
+}
 .deal-meta{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-top:7px}
 .deal-meta .src{font-size:11.5px;color:var(--ink-soft);font-weight:600;margin-right:2px}
 .deal-meta .ago{font-size:11.5px;color:var(--ink-soft);margin-left:auto}
@@ -123,9 +134,10 @@ button:focus-visible,.f:focus-visible{outline:2px solid var(--accent);outline-of
   <h2>Stacking now <span class="n" id="stackCount"></span></h2>
   <div id="stacks"><div class="empty">Looking for overlaps…</div></div>
   <h2>Latest finds <span class="n" id="dealCount"></span></h2>
+  <div class="filters" id="rfilters"></div>
   <div class="filters" id="filters"></div>
   <div id="deals"></div>
-  <footer>Deals surface from r/MUAontheCheap, r/Ulta &amp; Slickdeals — always double-check the cart.<br>Homemade with <span class="heart">♥</span> · tap the ☆ on a brand to pin it</footer>
+  <footer>Deals surface from r/MUAontheCheap, r/Ulta &amp; Slickdeals across Ulta, Sephora, Costco, Target &amp; more — always double-check the cart.<br>Homemade with <span class="heart">♥</span> · tap the ☆ on a brand to pin it</footer>
 </div>
 
 <script>
@@ -142,6 +154,33 @@ const TYPES = {
   "Coupon":/\bcoupon\b|promo code|\bcode\s[A-Z0-9]{4,}\b/,
   "Sale":/\bsale\b|\bclearance\b|\bdaily deals?\b|21 days of beauty|gorgeous hair event|jumbo|liter/i
 };
+const RETAILERS = [
+  ["Ulta", /\bulta\b/i, "https://www.ulta.com/search?query={q}"],
+  ["Sephora", /\bsephora\b/i, "https://www.sephora.com/search?keyword={q}"],
+  ["Costco", /\bcostco\b/i, "https://www.costco.com/CatalogSearch?dept=All&keyword={q}"],
+  ["Target", /\btarget\b/i, "https://www.target.com/s?searchTerm={q}"],
+  ["Walmart", /\bwalmart\b/i, "https://www.walmart.com/search?q={q}"],
+  ["Amazon", /\bamazon\b/i, "https://www.amazon.com/s?k={q}"],
+  ["Walgreens", /\bwalgreens\b/i, "https://www.walgreens.com/search/results.jsp?Ntt={q}"],
+  ["CVS", /\bcvs\b/i, "https://www.cvs.com/search?searchTerm={q}"],
+  ["Sally Beauty", /\bsally('s| beauty)?\b/i, "https://www.sallybeauty.com/search?q={q}"],
+  ["TJ Maxx", /\btj ?maxx\b/i, "https://tjmaxx.tjx.com/store/shop/_/N-0?q={q}"],
+  ["Marshalls", /\bmarshalls\b/i, "https://www.marshalls.com/us/store/shop/_/N-0?q={q}"],
+];
+const SEARCH_URL = Object.fromEntries(RETAILERS.map(r => [r[0], r[2]]));
+const detectRetailer = (t, dflt=null) => {
+  let best = dflt, pos = Infinity;
+  for (const [name, rx] of RETAILERS){
+    const m = rx.exec(t);
+    if (m && m.index < pos){ best = name; pos = m.index; }
+  }
+  return best;
+};
+const STOP = new Set("the a an off free with for and or at on of in to buy get one new only today deal deals sale up".split(" "));
+const storeQuery = (t, brands) => brands.length ? brands[0]
+  : t.replace(/[^\w\s']/g," ").split(/\s+/).filter(w => w && !STOP.has(w.toLowerCase()) && !/^\d+$/.test(w)).slice(0,4).join(" ") || t.slice(0,40);
+const storeUrl = (retailer, t, brands) => retailer && SEARCH_URL[retailer]
+  ? SEARCH_URL[retailer].replace("{q}", encodeURIComponent(storeQuery(t, brands))) : null;
 const title = s => s.replace(/\w\S*/g, t => t[0].toUpperCase()+t.slice(1).toLowerCase()).replace(/'S\b/g,"'s");
 const tagBrands = t => { const low = " "+t.toLowerCase()+" ", out=[];
   for (const b of BRANDS) if (low.includes(b)) { const n = ALIAS[b] || title(b.trim()); if (!out.includes(n)) out.push(n); }
@@ -150,7 +189,7 @@ const tagTypes = t => Object.keys(TYPES).filter(k => TYPES[k].test(t));
 const MAX_AGE = 21*86400;
 
 /* ---------- state ---------- */
-let items = [], meta = {}, filter = "All";
+let items = [], meta = {}, filter = "All", rfilter = "All";
 let favs = [];
 try { favs = JSON.parse(localStorage.getItem("uu_favs")||"[]"); } catch(e){}
 const saveFavs = () => { try { localStorage.setItem("uu_favs", JSON.stringify(favs)); } catch(e){} };
@@ -169,8 +208,11 @@ function findStacks(list){
   const out = [];
   for (const [brand, its] of Object.entries(byBrand)){
     const types = [...new Set(its.flatMap(i => i.type_labels))];
-    if (types.length >= 2 || its.length >= 2)
-      out.push({brand, types, items: its.slice(0,4), latest: Math.max(...its.map(i=>i.created))});
+    if (types.length >= 2 || its.length >= 2){
+      const retailers = [...new Set(its.map(i=>i.retailer).filter(Boolean))];
+      if (!retailers.length) retailers.push("Ulta");
+      out.push({brand, types, retailers, items: its.slice(0,4), latest: Math.max(...its.map(i=>i.created))});
+    }
   }
   out.sort((a,b) => (favs.includes(b.brand)-favs.includes(a.brand)) || (b.types.length-a.types.length) || (b.latest-a.latest));
   return out;
@@ -189,6 +231,7 @@ function render(){
       </div>
       <div class="tchips">${s.types.map(t=>`<span class="tchip">${t}</span>`).join("")}</div>
       <ul class="stack-links">${s.items.map(i=>`<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a> <span class="src">· ${esc(i.source)} · ${ago(i.created)}</span></li>`).join("")}</ul>
+      <div class="deal-actions">${s.retailers.map(r=>`<a class="shop-btn" target="_blank" rel="noopener" href="${esc(SEARCH_URL[r].replace("{q}",encodeURIComponent(s.brand)))}">Shop ${esc(s.brand)} at ${esc(r)} ↗</a>`).join("")}</div>
     </div>`).join("")
     : `<div class="empty">No overlapping promos spotted right now — check Latest finds below.</div>`;
   document.querySelectorAll(".star").forEach(b => b.onclick = () => {
@@ -197,21 +240,34 @@ function render(){
     saveFavs(); render();
   });
 
+  const stores = ["All", ...new Set(items.map(i=>i.retailer).filter(Boolean))];
+  document.getElementById("rfilters").innerHTML = stores.length > 2 ? stores.map(n =>
+    `<button class="f${n===rfilter?" on":""}" data-r="${esc(n)}">${esc(n)}</button>`).join("") : "";
+  document.querySelectorAll("#rfilters .f").forEach(b => b.onclick = () => { rfilter = b.dataset.r; render(); });
+
   const names = ["All", ...Object.keys(TYPES)];
   document.getElementById("filters").innerHTML = names.map(n =>
     `<button class="f${n===filter?" on":""}" data-f="${n}">${n}</button>`).join("");
-  document.querySelectorAll(".f").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
+  document.querySelectorAll("#filters .f").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
 
-  const shown = items.filter(i => filter==="All" || i.type_labels.includes(filter)).slice(0,80);
+  const shown = items.filter(i => (filter==="All" || i.type_labels.includes(filter))
+                                && (rfilter==="All" || i.retailer===rfilter)).slice(0,80);
   document.getElementById("dealCount").textContent = shown.length;
-  document.getElementById("deals").innerHTML = shown.length ? shown.map(i => `
-    <a class="deal" href="${esc(i.url)}" target="_blank" rel="noopener">
+  document.getElementById("deals").innerHTML = shown.length ? shown.map(i => {
+    const shop = i.store_url || storeUrl(i.retailer, i.title, i.brands);
+    return `
+    <div class="deal">
       <div class="deal-title">${esc(i.title)}</div>
       <div class="deal-meta"><span class="src">${esc(i.source)}</span>
+        ${i.retailer?`<span class="rchip">${esc(i.retailer)}</span>`:""}
         ${i.brands.slice(0,3).map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}
         ${i.type_labels.slice(0,3).map(t=>`<span class="tchip">${t}</span>`).join("")}
         <span class="ago">${ago(i.created)}</span></div>
-    </a>`).join("")
+      <div class="deal-actions">
+        ${shop?`<a class="shop-btn" href="${esc(shop)}" target="_blank" rel="noopener">Shop at ${esc(i.retailer)} ↗</a>`:""}
+        <a class="thread-link" href="${esc(i.url)}" target="_blank" rel="noopener">deal details ↗</a>
+      </div>
+    </div>`;}).join("")
     : `<div class="empty">Nothing under that filter right now.</div>`;
 
   document.getElementById("updated").textContent = meta.when ? "updated "+ago(meta.when) : "";
@@ -244,9 +300,12 @@ async function loadLive(){
       const d = await (await fetch(`https://www.reddit.com/r/${sub}/${listing}.json?limit=40&raw_json=1`)).json();
       for (const c of d.data.children){
         const p = c.data, t = p.title||"";
-        if (sub!=="Ulta" && !t.toLowerCase().includes("ulta")) continue;
+        const brands = tagBrands(t);
+        const retailer = detectRetailer(t, sub==="Ulta" ? "Ulta" : null);
+        if (!retailer && !brands.length) continue;
         absorb([{ url:"https://www.reddit.com"+p.permalink, title:t, source:"r/"+sub,
-                  created:p.created_utc, brands:tagBrands(t), type_labels:tagTypes(t) }]);
+                  created:p.created_utc, brands, type_labels:tagTypes(t),
+                  retailer, store_url:storeUrl(retailer, t, brands) }]);
       }
       got = true;
     } catch(e){}

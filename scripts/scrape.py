@@ -1,23 +1,31 @@
 #!/usr/bin/env python3
-"""UltraUlta deal scraper.
+"""UltraUlta deal scraper (v2 — multi-store).
 
-Pulls current Ulta-related deals from community sources (Reddit, Slickdeals),
-tags them by brand and offer type, finds overlapping ("stackable") promos,
+Pulls current beauty deals from community sources (Reddit, Slickdeals),
+tags them by brand, offer type, and RETAILER, builds a direct "shop it"
+link into each store, finds overlapping ("stackable") promos per brand,
 and writes data/deals.json for the web app.
 
-Stdlib only — no pip installs needed. Designed to run on GitHub Actions.
-Every source is best-effort: if one fails, we keep its last-known items
-from the previous deals.json rather than wiping them.
+Stdlib only. Designed for GitHub Actions. Every source is best-effort:
+if one fails, its last-known items are kept from the previous run.
+
+Reddit: GitHub's servers are blocked by reddit.com, so this uses Reddit's
+official free API when credentials are provided via env vars
+REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET (GitHub repo secrets). Without
+them it still tries the public endpoints (works from residential IPs).
 
 Usage:
   python3 scripts/scrape.py            # normal run
   python3 scripts/scrape.py --sample   # generate sample data (no network)
 """
 
+import base64
 import json
+import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -28,11 +36,27 @@ OUT = ROOT / "data" / "deals.json"
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15")
+API_UA = "web:ultraulta:v2 (personal deal tracker)"
 
-MAX_AGE_DAYS = 21          # how long a community post counts as "active"
-STACK_MIN_OFFERS = 2       # offers needed on one brand to call it a stack
+MAX_AGE_DAYS = 21
+STACK_MIN_OFFERS = 2
 
-# Brands commonly carried at Ulta. Lowercase; longest-first matching.
+# ---- retailers: label, detection regex, product-search URL template ----
+RETAILERS = [
+    ("Ulta",      re.compile(r"\bulta\b", re.I),               "https://www.ulta.com/search?query={q}"),
+    ("Sephora",   re.compile(r"\bsephora\b", re.I),            "https://www.sephora.com/search?keyword={q}"),
+    ("Costco",    re.compile(r"\bcostco\b", re.I),             "https://www.costco.com/CatalogSearch?dept=All&keyword={q}"),
+    ("Target",    re.compile(r"\btarget\b", re.I),             "https://www.target.com/s?searchTerm={q}"),
+    ("Walmart",   re.compile(r"\bwalmart\b", re.I),            "https://www.walmart.com/search?q={q}"),
+    ("Amazon",    re.compile(r"\bamazon\b", re.I),             "https://www.amazon.com/s?k={q}"),
+    ("Walgreens", re.compile(r"\bwalgreens\b", re.I),          "https://www.walgreens.com/search/results.jsp?Ntt={q}"),
+    ("CVS",       re.compile(r"\bcvs\b", re.I),                "https://www.cvs.com/search?searchTerm={q}"),
+    ("Sally Beauty", re.compile(r"\bsally('s| beauty)?\b", re.I), "https://www.sallybeauty.com/search?q={q}"),
+    ("TJ Maxx",   re.compile(r"\btj ?maxx\b", re.I),           "https://tjmaxx.tjx.com/store/shop/_/N-0?q={q}"),
+    ("Marshalls", re.compile(r"\bmarshalls\b", re.I),          "https://www.marshalls.com/us/store/shop/_/N-0?q={q}"),
+]
+SEARCH_URL = {name: tpl for name, _, tpl in RETAILERS}
+
 BRANDS = [
     "anastasia beverly hills", "abh", "bare minerals", "bareminerals",
     "benefit", "billie eilish", "biolage", "black girl sunscreen", "bubble",
@@ -65,39 +89,26 @@ OFFER_TYPES = {
     "coupon":      re.compile(r"\bcoupon\b|promo code|\bcode\s[A-Z0-9]{4,}\b", re.I),
     "sale":        re.compile(r"\bsale\b|\bclearance\b|\bdaily deals?\b|21 days of beauty|gorgeous hair event|jumbo|liter", re.I),
 }
-
 TYPE_LABELS = {
     "percent_off": "% off", "dollar_off": "$ off", "gwp": "Free gift",
     "points": "Points", "bogo": "BOGO", "coupon": "Coupon", "sale": "Sale",
 }
+
+STOPWORDS = set("the a an off free with for and or at on of in to buy get one new only today deal deals sale up".split())
 
 
 def log(msg):
     print(f"[ultraulta] {msg}", flush=True)
 
 
-def fetch(url, timeout=25):
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA,
-        "Accept": "application/json,text/xml,application/xml,text/html;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-    })
+def fetch(url, timeout=25, headers=None, data=None):
+    h = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9",
+         "Accept": "application/json,text/xml,application/xml,text/html;q=0.9,*/*;q=0.8"}
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, headers=h, data=data)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
-
-
-def fetch_any(urls):
-    """Try each URL until one works."""
-    last_err = None
-    for u in urls:
-        try:
-            body = fetch(u)
-            return body, u
-        except Exception as e:  # noqa: BLE001 — every failure is non-fatal by design
-            last_err = e
-            log(f"  failed {u}: {e}")
-            time.sleep(2)
-    raise RuntimeError(f"all mirrors failed: {last_err}")
 
 
 def tag_brands(text):
@@ -106,7 +117,6 @@ def tag_brands(text):
     for b in BRANDS:
         if b in t:
             name = b.strip().title().replace("'S", "'s")
-            # Normalize a few aliases
             name = {"Abh": "Anastasia Beverly Hills", "Elf Cosmetics": "e.l.f.",
                     "E.L.F.": "e.l.f.", "Bareminerals": "Bare Minerals",
                     "Estée Lauder": "Estee Lauder", "Lancôme": "Lancome",
@@ -124,14 +134,35 @@ def tag_types(text):
     return [k for k, rx in OFFER_TYPES.items() if rx.search(text)]
 
 
-def is_ulta_related(title, source):
-    if source.startswith("r/Ulta"):
-        return True
-    return "ulta" in title.lower()
+def detect_retailer(text, default=None):
+    # Earliest mention wins: "Costco: ... under Ulta price" is a Costco deal.
+    best, pos = default, len(text) + 1
+    for name, rx, _ in RETAILERS:
+        m = rx.search(text)
+        if m and m.start() < pos:
+            best, pos = name, m.start()
+    return best
 
 
-def item(source, title, url, created_utc, score=0):
+def store_query(title, brands):
+    if brands:
+        return brands[0]
+    words = [w for w in re.sub(r"[^\w\s']", " ", title).split()
+             if w.lower() not in STOPWORDS and not w.replace("$", "").replace("%", "").isdigit()]
+    return " ".join(words[:4]) or title[:40]
+
+
+def store_url(retailer, title, brands):
+    tpl = SEARCH_URL.get(retailer)
+    if not tpl:
+        return None
+    return tpl.format(q=urllib.parse.quote_plus(store_query(title, brands)))
+
+
+def item(source, title, url, created_utc, score=0, default_retailer=None):
     types = tag_types(title)
+    brands = tag_brands(title)
+    retailer = detect_retailer(title, default=default_retailer)
     return {
         "id": f"{source}:{abs(hash(url)) % 10**10}",
         "source": source,
@@ -139,61 +170,119 @@ def item(source, title, url, created_utc, score=0):
         "url": url,
         "created": int(created_utc),
         "score": score,
-        "brands": tag_brands(title),
+        "brands": brands,
         "types": types,
         "type_labels": [TYPE_LABELS[t] for t in types],
+        "retailer": retailer,
+        "store_url": store_url(retailer, title, brands),
     }
+
+
+def keep(it):
+    """A post earns its place if we know the store or the brand."""
+    return bool(it["retailer"] or it["brands"])
 
 
 # ---------------- sources ----------------
 
-def src_reddit(sub, listing="new", limit=60):
-    body, used = fetch_any([
-        f"https://www.reddit.com/r/{sub}/{listing}.json?limit={limit}&raw_json=1",
-        f"https://old.reddit.com/r/{sub}/{listing}.json?limit={limit}&raw_json=1",
-    ])
-    data = json.loads(body)
-    out = []
-    for child in data.get("data", {}).get("children", []):
-        d = child.get("data", {})
-        title = d.get("title", "")
-        if not title:
-            continue
-        src = f"r/{sub}"
-        if not is_ulta_related(title, src):
-            continue
-        out.append(item(src, title,
-                        "https://www.reddit.com" + d.get("permalink", ""),
-                        d.get("created_utc", 0), d.get("score", 0)))
-    log(f"  r/{sub}: {len(out)} ulta-related posts via {used}")
-    return out
+_reddit_token = None
+
+def reddit_token():
+    global _reddit_token
+    if _reddit_token is not None:
+        return _reddit_token
+    cid = os.environ.get("REDDIT_CLIENT_ID", "").strip()
+    sec = os.environ.get("REDDIT_CLIENT_SECRET", "").strip()
+    if not cid or not sec:
+        _reddit_token = ""
+        return ""
+    try:
+        auth = base64.b64encode(f"{cid}:{sec}".encode()).decode()
+        body = fetch("https://www.reddit.com/api/v1/access_token",
+                     headers={"Authorization": f"Basic {auth}",
+                              "User-Agent": API_UA,
+                              "Content-Type": "application/x-www-form-urlencoded"},
+                     data=b"grant_type=client_credentials")
+        _reddit_token = json.loads(body).get("access_token", "")
+        log("  reddit: got API token" if _reddit_token else "  reddit: token response missing access_token")
+    except Exception as e:  # noqa: BLE001
+        log(f"  reddit: token fetch failed: {e}")
+        _reddit_token = ""
+    return _reddit_token
+
+
+def src_reddit(sub, listing="new", limit=75, default_retailer=None):
+    tok = reddit_token()
+    attempts = []
+    if tok:
+        attempts.append((f"https://oauth.reddit.com/r/{sub}/{listing}?limit={limit}&raw_json=1",
+                         {"Authorization": f"Bearer {tok}", "User-Agent": API_UA}))
+    attempts += [
+        (f"https://www.reddit.com/r/{sub}/{listing}.json?limit={limit}&raw_json=1", None),
+        (f"https://old.reddit.com/r/{sub}/{listing}.json?limit={limit}&raw_json=1", None),
+    ]
+    last_err = None
+    for url, hdrs in attempts:
+        try:
+            data = json.loads(fetch(url, headers=hdrs))
+            out = []
+            for child in data.get("data", {}).get("children", []):
+                d = child.get("data", {})
+                title = d.get("title", "")
+                if not title:
+                    continue
+                it = item(f"r/{sub}", title,
+                          "https://www.reddit.com" + d.get("permalink", ""),
+                          d.get("created_utc", 0), d.get("score", 0),
+                          default_retailer=default_retailer)
+                if keep(it):
+                    out.append(it)
+            log(f"  r/{sub}: {len(out)} kept via {url.split('/')[2]}")
+            return out
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            log(f"  failed {url}: {e}")
+            time.sleep(2)
+    raise RuntimeError(f"all reddit endpoints failed: {last_err}")
 
 
 def src_slickdeals():
-    body, used = fetch_any([
-        "https://slickdeals.net/newsearch.php?src=SearchBarV2&q=ulta&searcharea=deals&searchin=first&rss=1",
-        "https://slickdeals.net/newsearch.php?q=ulta&searchin=first&rss=1",
-    ])
-    root = ET.fromstring(body)
-    out = []
-    for it in root.iter("item"):
-        title = (it.findtext("title") or "").strip()
-        link = (it.findtext("link") or "").strip()
-        pub = (it.findtext("pubDate") or "").strip()
-        if not title or "ulta" not in title.lower():
-            continue
+    queries = ["ulta", "sephora", "beauty", "costco beauty"]
+    out, seen, ok = [], set(), 0
+    last_err = None
+    for q in queries:
+        url = ("https://slickdeals.net/newsearch.php?src=SearchBarV2&searcharea=deals"
+               f"&searchin=first&rss=1&q={urllib.parse.quote_plus(q)}")
         try:
-            created = time.mktime(time.strptime(pub[:25], "%a, %d %b %Y %H:%M:%S"))
-        except Exception:
-            created = time.time()
-        out.append(item("Slickdeals", title, link, created))
-    log(f"  slickdeals: {len(out)} items via {used}")
+            root = ET.fromstring(fetch(url))
+            for el in root.iter("item"):
+                title = (el.findtext("title") or "").strip()
+                link = (el.findtext("link") or "").strip()
+                pub = (el.findtext("pubDate") or "").strip()
+                if not title or link in seen:
+                    continue
+                seen.add(link)
+                try:
+                    created = time.mktime(time.strptime(pub[:25], "%a, %d %b %Y %H:%M:%S"))
+                except Exception:
+                    created = time.time()
+                it = item("Slickdeals", title, link, created)
+                if keep(it):
+                    out.append(it)
+            ok += 1
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            log(f"  slickdeals '{q}' failed: {e}")
+        time.sleep(1)
+    if not ok:
+        raise RuntimeError(f"all slickdeals queries failed: {last_err}")
+    log(f"  slickdeals: {len(out)} kept across {ok} queries")
     return out
 
 
 SOURCES = {
     "reddit_muaonthecheap": lambda: src_reddit("MUAontheCheap"),
-    "reddit_ulta":          lambda: src_reddit("Ulta", listing="hot"),
+    "reddit_ulta":          lambda: src_reddit("Ulta", listing="hot", default_retailer="Ulta"),
     "slickdeals":           src_slickdeals,
 }
 
@@ -201,8 +290,7 @@ SOURCES = {
 # ---------------- processing ----------------
 
 def find_stacks(items):
-    now = time.time()
-    cutoff = now - MAX_AGE_DAYS * 86400
+    cutoff = time.time() - MAX_AGE_DAYS * 86400
     by_brand = {}
     for it in items:
         if it["created"] < cutoff:
@@ -211,17 +299,18 @@ def find_stacks(items):
             by_brand.setdefault(b, []).append(it)
     stacks = []
     for brand, its in by_brand.items():
-        # Distinct offer signals: count unique offer types across items;
-        # two typeless posts from different sources still hint at overlap.
         types = sorted({t for i in its for t in i["types"]})
-        # A stack = one brand with 2+ distinct offer types in play (even in a
-        # single post), or 2+ separate active posts about it.
         if len(types) >= 2 or len(its) >= STACK_MIN_OFFERS:
+            retailers = sorted({i["retailer"] for i in its if i["retailer"]}) or ["Ulta"]
             stacks.append({
                 "brand": brand,
                 "count": len(its),
                 "types": types,
                 "type_labels": [TYPE_LABELS[t] for t in types],
+                "retailers": retailers,
+                "shop": [{"retailer": r,
+                          "url": SEARCH_URL[r].format(q=urllib.parse.quote_plus(brand))}
+                         for r in retailers],
                 "item_ids": [i["id"] for i in its],
                 "latest": max(i["created"] for i in its),
             })
@@ -237,8 +326,7 @@ def load_previous():
 
 
 def build(results, statuses, sample=False):
-    items = []
-    seen = set()
+    items, seen = [], set()
     for lst in results.values():
         for it in lst:
             if it["url"] in seen:
@@ -251,7 +339,7 @@ def build(results, statuses, sample=False):
         "sample": sample,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "sources": statuses,
-        "items": items[:200],
+        "items": items[:250],
         "stacks": find_stacks(items),
     }
 
@@ -260,10 +348,9 @@ def sample_data():
     now = time.time()
     rows = [
         ("r/MUAontheCheap", "Ulta 20% off prestige coupon is live through Saturday (exclusions apply)", now - 3600),
-        ("r/MUAontheCheap", "Ulta Gorgeous Hair Event: Redken + Biolage liters up to 50% off this week", now - 7200),
         ("r/Ulta", "PSA: 5x points on all haircare stacks with the liter sale — Redken liters basically 60% off", now - 5400),
-        ("Slickdeals", "Ulta Beauty: Tarte free 6-pc gift with $40 purchase + BOGO 50% off", now - 90000),
-        ("r/Ulta", "Sol de Janeiro GWP + $10 off $50 coupon worked together for me online", now - 200000),
+        ("Slickdeals", "Costco: Sol de Janeiro Bum Bum Cream 2-pack $38 (way under Ulta price)", now - 40000),
+        ("r/MUAontheCheap", "Sephora: Tarte BOGO 50% off + free 6-pc gift with $40", now - 90000),
         ("Slickdeals", "Ulta: e.l.f. sale 30% off + free shipping over $35", now - 300000),
     ]
     results = {"sample": [item(s, t, f"https://example.com/{i}", c) for i, (s, t, c) in enumerate(rows)]}
@@ -276,7 +363,6 @@ def main():
         data = sample_data()
     else:
         prev = load_previous()
-        # never carry sample/placeholder entries into real data
         prev_items = [i for i in prev.get("items", [])
                       if "example.com" not in i.get("url", "")]
         results, statuses = {}, {}
@@ -288,8 +374,8 @@ def main():
                                   "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
             except Exception as e:  # noqa: BLE001
                 log(f"  {name} FAILED: {e}")
-                # keep this source's items from the previous run
-                kept = [i for i in prev_items if i["source"].lower().replace("/", "_").replace("r_", "reddit_").lower() in name or name.split("_")[0] in i["source"].lower()]
+                kept = [i for i in prev_items if name.split("_")[0] in i["source"].lower()
+                        or i["source"].lower().replace("/", "_").replace("r_", "reddit_") in name]
                 results[name] = kept
                 statuses[name] = {"ok": False, "count": len(kept), "error": str(e)[:200],
                                   "fetched_at": prev.get("sources", {}).get(name, {}).get("fetched_at")}
