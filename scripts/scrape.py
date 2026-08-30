@@ -276,7 +276,9 @@ def main():
         data = sample_data()
     else:
         prev = load_previous()
-        prev_items = prev.get("items", [])
+        # never carry sample/placeholder entries into real data
+        prev_items = [i for i in prev.get("items", [])
+                      if "example.com" not in i.get("url", "")]
         results, statuses = {}, {}
         for name, fn in SOURCES.items():
             try:
