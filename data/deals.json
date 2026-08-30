@@ -1,87 +1,29 @@
 {
  "app": "UltraUlta",
  "sample": false,
- "generated_at": "2026-08-30T22:05:27+00:00",
+ "generated_at": "2026-08-30T22:13:41+00:00",
  "sources": {
   "reddit_muaonthecheap": {
    "ok": false,
-   "count": 2,
+   "count": 0,
    "error": "all mirrors failed: HTTP Error 403: Blocked",
    "fetched_at": null
   },
   "reddit_ulta": {
    "ok": false,
-   "count": 2,
+   "count": 0,
    "error": "all mirrors failed: HTTP Error 403: Blocked",
    "fetched_at": null
   },
   "slickdeals": {
    "ok": true,
    "count": 11,
-   "fetched_at": "2026-08-30T22:05:27+00:00"
+   "fetched_at": "2026-08-30T22:13:41+00:00"
   }
  },
  "items": [
   {
-   "id": "r/MUAontheCheap:9041591748",
-   "source": "r/MUAontheCheap",
-   "title": "Ulta 20% off prestige coupon is live through Saturday (exclusions apply)",
-   "url": "https://example.com/0",
-   "created": 1788122808,
-   "score": 0,
-   "brands": [],
-   "types": [
-    "percent_off",
-    "coupon"
-   ],
-   "type_labels": [
-    "% off",
-    "Coupon"
-   ]
-  },
-  {
-   "id": "r/Ulta:7403119179",
-   "source": "r/Ulta",
-   "title": "PSA: 5x points on all haircare stacks with the liter sale \u2014 Redken liters basically 60% off",
-   "url": "https://example.com/2",
-   "created": 1788121008,
-   "score": 0,
-   "brands": [
-    "Redken"
-   ],
-   "types": [
-    "percent_off",
-    "points",
-    "sale"
-   ],
-   "type_labels": [
-    "% off",
-    "Points",
-    "Sale"
-   ]
-  },
-  {
-   "id": "r/MUAontheCheap:6149049484",
-   "source": "r/MUAontheCheap",
-   "title": "Ulta Gorgeous Hair Event: Redken + Biolage liters up to 50% off this week",
-   "url": "https://example.com/1",
-   "created": 1788119208,
-   "score": 0,
-   "brands": [
-    "Biolage",
-    "Redken"
-   ],
-   "types": [
-    "percent_off",
-    "sale"
-   ],
-   "type_labels": [
-    "% off",
-    "Sale"
-   ]
-  },
-  {
-   "id": "Slickdeals:4399898441",
+   "id": "Slickdeals:9005601011",
    "source": "Slickdeals",
    "title": "Ulta 21+ Days of Beauty Sale: Day 2 - 8/29: 50% off Beauty Steals",
    "url": "https://slickdeals.net/f/19940703-ulta-21-days-of-beauty-sale-day-2-8-29-50-off-beauty-steals?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -98,28 +40,7 @@
    ]
   },
   {
-   "id": "r/Ulta:2843369103",
-   "source": "r/Ulta",
-   "title": "Sol de Janeiro GWP + $10 off $50 coupon worked together for me online",
-   "url": "https://example.com/4",
-   "created": 1787926408,
-   "score": 0,
-   "brands": [
-    "Sol De Janeiro"
-   ],
-   "types": [
-    "dollar_off",
-    "gwp",
-    "coupon"
-   ],
-   "type_labels": [
-    "$ off",
-    "Free gift",
-    "Coupon"
-   ]
-  },
-  {
-   "id": "Slickdeals:5530826790",
+   "id": "Slickdeals:1400115813",
    "source": "Slickdeals",
    "title": "Costco - Ulta Beauty - Four $50 eGift Cards + One $40 eGift Card ($240 Total) - $199.99",
    "url": "https://slickdeals.net/f/19936359-costco-ulta-beauty-four-50-egift-cards-one-40-egift-card-240-total-199-99?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -130,7 +51,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:93908701",
+   "id": "Slickdeals:5001687449",
    "source": "Slickdeals",
    "title": "Ulta 21+ Days of Beauty Sale: Select Beauty Products/Brands 50% Off (8/28 only) + Free S&H on $35+",
    "url": "https://slickdeals.net/f/19936347-ulta-21-days-of-beauty-sale-select-beauty-products-brands-50-off-8-28-only-free-s-h-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -147,7 +68,7 @@
    ]
   },
   {
-   "id": "Slickdeals:9595529952",
+   "id": "Slickdeals:2355428272",
    "source": "Slickdeals",
    "title": "Select DashPass Members: Select eGift Cards (Ulta, GAP, H&M, DSW & More) up to 15% Off (Maximum Discount of $30)",
    "url": "https://slickdeals.net/f/19889727-select-dashpass-members-select-egift-cards-ulta-gap-h-m-dsw-more-up-to-15-off-maximum-discount-of-30?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -162,7 +83,7 @@
    ]
   },
   {
-   "id": "Slickdeals:2364056953",
+   "id": "Slickdeals:6098365021",
    "source": "Slickdeals",
    "title": "Olaplex Shampoo and Conditioner - 2 for $48 + Free Shipping - Ulta.com",
    "url": "https://slickdeals.net/f/19840545-olaplex-shampoo-and-conditioner-2-for-48-free-shipping-ulta-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -175,7 +96,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:4778829102",
+   "id": "Slickdeals:4822000166",
    "source": "Slickdeals",
    "title": "Save $10 ac on a $40 Online Pick Up order at ULTA BEAUTY",
    "url": "https://slickdeals.net/f/19840371-save-10-ac-on-a-40-online-pick-up-order-at-ulta-beauty?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -186,7 +107,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:9342381533",
+   "id": "Slickdeals:9020075714",
    "source": "Slickdeals",
    "title": "Kiss Press On Nails starting at $2.25 - Ulta Beauty",
    "url": "https://slickdeals.net/f/19806138-kiss-press-on-nails-starting-at-2-25-ulta-beauty?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -199,7 +120,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:6019026291",
+   "id": "Slickdeals:1696143703",
    "source": "Slickdeals",
    "title": "Starts 9p et PLUS or  7/24: SAMS CLUB GIFT CARD DEALS: Top Golf $50 ($75 face), Smashburger $35 ($50 face), ULTA $98 ($120 value), NINTENDO $80 ($100 face)",
    "url": "https://slickdeals.net/f/19770765-starts-9p-et-plus-or-7-24-sams-club-gift-card-deals-top-golf-50-75-face-smashburger-35-50-face-ulta-98-120-value-nintendo-80-100-face?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -210,7 +131,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:7346926765",
+   "id": "Slickdeals:3372518223",
    "source": "Slickdeals",
    "title": "$100 Ulta giftcard for $85",
    "url": "https://slickdeals.net/f/19746996-100-ulta-giftcard-for-85?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -221,7 +142,7 @@
    "type_labels": []
   },
   {
-   "id": "Slickdeals:9886720909",
+   "id": "Slickdeals:8060611171",
    "source": "Slickdeals",
    "title": "Ulta Beauty Collection Sale: Lip Cream, Pillow Puff Blush, Lipstick and More $3 Each + Free In-Store Pickup or Free Shipping on $35+",
    "url": "https://slickdeals.net/f/19738035-ulta-beauty-collection-sale-lip-cream-pillow-puff-blush-lipstick-and-more-3-each-free-in-store-pickup-or-free-shipping-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -238,7 +159,7 @@
    ]
   },
   {
-   "id": "Slickdeals:9492509812",
+   "id": "Slickdeals:1197769097",
    "source": "Slickdeals",
    "title": "DashPass Members: 15% Off Select e-Gift Cards (Chipotle, Ulta Beauty, & More), 20% off Dave & Buster's",
    "url": "https://slickdeals.net/f/19729518-dashpass-members-15-off-select-e-gift-cards-chipotle-ulta-beauty-more-20-off-dave-buster-s?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -253,59 +174,5 @@
    ]
   }
  ],
- "stacks": [
-  {
-   "brand": "Redken",
-   "count": 2,
-   "types": [
-    "percent_off",
-    "points",
-    "sale"
-   ],
-   "type_labels": [
-    "% off",
-    "Points",
-    "Sale"
-   ],
-   "item_ids": [
-    "r/Ulta:7403119179",
-    "r/MUAontheCheap:6149049484"
-   ],
-   "latest": 1788121008
-  },
-  {
-   "brand": "Sol De Janeiro",
-   "count": 1,
-   "types": [
-    "coupon",
-    "dollar_off",
-    "gwp"
-   ],
-   "type_labels": [
-    "Coupon",
-    "$ off",
-    "Free gift"
-   ],
-   "item_ids": [
-    "r/Ulta:2843369103"
-   ],
-   "latest": 1787926408
-  },
-  {
-   "brand": "Biolage",
-   "count": 1,
-   "types": [
-    "percent_off",
-    "sale"
-   ],
-   "type_labels": [
-    "% off",
-    "Sale"
-   ],
-   "item_ids": [
-    "r/MUAontheCheap:6149049484"
-   ],
-   "latest": 1788119208
-  }
- ]
+ "stacks": []
 }
