@@ -1,7 +1,7 @@
 {
  "app": "UltraUlta",
  "sample": false,
- "generated_at": "2026-09-07T04:57:26+00:00",
+ "generated_at": "2026-09-07T12:48:12+00:00",
  "sources": {
   "reddit_muaonthecheap": {
    "ok": false,
@@ -17,18 +17,67 @@
   },
   "slickdeals": {
    "ok": true,
-   "count": 50,
-   "fetched_at": "2026-09-07T04:57:20+00:00"
+   "count": 47,
+   "fetched_at": "2026-09-07T12:48:06+00:00"
   },
   "hip2save": {
    "ok": true,
    "count": 359,
-   "fetched_at": "2026-09-07T04:57:26+00:00"
+   "fetched_at": "2026-09-07T12:48:12+00:00"
   }
  },
  "items": [
   {
-   "id": "Hip2Save:1530715145",
+   "id": "Hip2Save:725461557",
+   "source": "Hip2Save",
+   "title": "Free QVC Shipping + Rare Coupon = Hot Deals on Ninja, Shark, LEGO & More",
+   "url": "https://hip2save.com/deals/qvc-free-shipping/",
+   "created": 1788784680,
+   "score": 0,
+   "brands": [
+    "Shark"
+   ],
+   "types": [
+    "coupon"
+   ],
+   "type_labels": [
+    "Coupon"
+   ],
+   "retailer": null,
+   "store_url": null
+  },
+  {
+   "id": "Slickdeals:9729162541",
+   "source": "Slickdeals",
+   "title": "3-Oz Sol de Janeiro Cheirosa 76 Hair & Body Perfume Mist $12.35 w/ S&S + Free Shipping w/ Prime or on $35+",
+   "url": "https://slickdeals.net/f/19981089-3-oz-sol-de-janeiro-cheirosa-76-hair-body-perfume-mist-12-35-w-s-s-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
+   "created": 1788766144,
+   "score": 0,
+   "brands": [
+    "Sol De Janeiro"
+   ],
+   "types": [],
+   "type_labels": [],
+   "retailer": null,
+   "store_url": null
+  },
+  {
+   "id": "Slickdeals:9449328023",
+   "source": "Slickdeals",
+   "title": "3-Oz Sol de Janeiro Cheirosa 87 Rio Radiance Perfume Mist $13 + Free Shipping w/ Prime or on $35+",
+   "url": "https://slickdeals.net/f/19981068-3-oz-sol-de-janeiro-cheirosa-87-rio-radiance-perfume-mist-13-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
+   "created": 1788765953,
+   "score": 0,
+   "brands": [
+    "Sol De Janeiro"
+   ],
+   "types": [],
+   "type_labels": [],
+   "retailer": null,
+   "store_url": null
+  },
+  {
+   "id": "Hip2Save:5694924926",
    "source": "Hip2Save",
    "title": "Best CVS Deals This Week | 29\u00a2 CoverGirl, 99\u00a2 Crest & Oral-B Products + More!",
    "url": "https://hip2save.com/deals/cvs-deals-this-week/",
@@ -43,7 +92,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=Covergirl"
   },
   {
-   "id": "Hip2Save:980621189",
+   "id": "Hip2Save:4559206184",
    "source": "Hip2Save",
    "title": "Best Walgreens Weekly Ad Deals | $46 Worth Of Products Only $7 After Rewards",
    "url": "https://hip2save.com/deals/walgreens-weekly-ad/",
@@ -56,7 +105,7 @@
    "store_url": "https://www.walgreens.com/search/results.jsp?Ntt=Best+Walgreens+Weekly+Ad"
   },
   {
-   "id": "Hip2Save:9142569921",
+   "id": "Hip2Save:4709660987",
    "source": "Hip2Save",
    "title": "NEW Touchland Hand Sanitizer in Fall Scents Just $6 on Ulta.com",
    "url": "https://hip2save.com/deals/touchland-hand-sanitizer/",
@@ -69,7 +118,7 @@
    "store_url": "https://www.ulta.com/search?query=Touchland+Hand+Sanitizer+Fall"
   },
   {
-   "id": "Slickdeals:4371251562",
+   "id": "Slickdeals:2446420789",
    "source": "Slickdeals",
    "title": "4.2-Oz Clinique Dramatically Different Hydrating Jelly Oil-Free Face Moisturizer w/ Hyaluronic Acid $16.15 w/ S&S + Free Shipping w/ Prime or on $35+",
    "url": "https://slickdeals.net/f/19978599-4-2-oz-clinique-dramatically-different-hydrating-jelly-oil-free-face-moisturizer-w-hyaluronic-acid-16-15-w-s-s-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -84,7 +133,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:4076242000",
+   "id": "Hip2Save:7012399567",
    "source": "Hip2Save",
    "title": "ULTA 21 Days of Beauty Steals | 50% Off Clinique, Lanc\u00f4me, Joico & More",
    "url": "https://hip2save.com/deals/ulta-21-days-of-beauty/",
@@ -107,7 +156,7 @@
    "store_url": "https://www.ulta.com/search?query=Clinique"
   },
   {
-   "id": "Slickdeals:9245543062",
+   "id": "Slickdeals:3518451524",
    "source": "Slickdeals",
    "title": "Ulta Sunday Fun Day Today\u2019s 50% Off Beauty Steals 09/06",
    "url": "https://slickdeals.net/f/19978140-ulta-sunday-fun-day-today-s-50-off-beauty-steals-09-06?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -124,7 +173,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+Sunday+Fun+Day"
   },
   {
-   "id": "Hip2Save:1883099157",
+   "id": "Hip2Save:3295471881",
    "source": "Hip2Save",
    "title": "We\u2019re Sharing the Best LEGO Deals on Amazon",
    "url": "https://hip2save.com/deals/amazon-lego/",
@@ -137,7 +186,7 @@
    "store_url": "https://www.amazon.com/s?k=We+re+Sharing+Best"
   },
   {
-   "id": "Slickdeals:2505082226",
+   "id": "Slickdeals:7892642955",
    "source": "Slickdeals",
    "title": "Ulta Today\u2019s 50% off Beauty Steals  09/05",
    "url": "https://slickdeals.net/f/19976121-ulta-today-s-50-off-beauty-steals-09-05?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -154,7 +203,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+s+Beauty+Steals"
   },
   {
-   "id": "Hip2Save:3354945309",
+   "id": "Hip2Save:6980712117",
    "source": "Hip2Save",
    "title": "Beautiful By Drew Kids Accent Chair Only $48 Shipped on Walmart.com (Reg. $138) + More",
    "url": "https://hip2save.com/deals/swivel-chair/",
@@ -167,7 +216,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+By+Drew+Kids"
   },
   {
-   "id": "Slickdeals:9845569537",
+   "id": "Slickdeals:3424839200",
    "source": "Slickdeals",
    "title": "Beautiful Drew Barrymore Kids Accent Chair, Charcoal Boucl\u00e9 Fabric $48.30 + Free S&H at Walmart",
    "url": "https://slickdeals.net/f/19974417-beautiful-drew-barrymore-kids-accent-chair-charcoal-boucl-fabric-48-30-free-s-h-at-walmart?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -180,7 +229,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+Drew+Barrymore+Kids"
   },
   {
-   "id": "Hip2Save:2922147360",
+   "id": "Hip2Save:5562189666",
    "source": "Hip2Save",
    "title": "Reader-Fave Deal! Three Soda 12-Packs Only $15 at Target",
    "url": "https://hip2save.com/deals/target-soda/",
@@ -193,7 +242,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Reader+Fave+Three+Soda"
   },
   {
-   "id": "Hip2Save:6896174482",
+   "id": "Hip2Save:675228589",
    "source": "Hip2Save",
    "title": "*HOT* Beautiful by Drew Barrymore Ice Cream Maker Only $19 on Walmart.com (Reg. $55)",
    "url": "https://hip2save.com/deals/walmart-beautiful-ice-cream-maker/",
@@ -206,7 +255,7 @@
    "store_url": "https://www.walmart.com/search?q=HOT+Beautiful+by+Drew"
   },
   {
-   "id": "Slickdeals:8421423439",
+   "id": "Slickdeals:4220662894",
    "source": "Slickdeals",
    "title": "2.5-Oz Sol de Janeiro Delicia Drench Body Butter  $11.40 w/ S&S + Free Shipping w/ Prime or on $35+",
    "url": "https://slickdeals.net/f/19969911-2-5-oz-sol-de-janeiro-delicia-drench-body-butter-11-40-w-s-s-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -221,7 +270,7 @@
    "store_url": null
   },
   {
-   "id": "Slickdeals:5305999931",
+   "id": "Slickdeals:9953660337",
    "source": "Slickdeals",
    "title": "CVS Beauty Day Giveaway",
    "url": "https://slickdeals.net/f/19968954-cvs-beauty-day-giveaway?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -234,7 +283,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=CVS+Beauty+Day+Giveaway"
   },
   {
-   "id": "Hip2Save:7689635179",
+   "id": "Hip2Save:5881679166",
    "source": "Hip2Save",
    "title": "Tarte Summer Blowout Sale = Up to 80% Off Beauty Favorites!",
    "url": "https://hip2save.com/deals/tarte-cosmetics-sale/",
@@ -255,7 +304,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:9371703474",
+   "id": "Hip2Save:478477588",
    "source": "Hip2Save",
    "title": "OVER 30 Amazon Grocery Deals You Can Grab Now \u2013 Many Under $5",
    "url": "https://hip2save.com/deals/amazon-groceries/",
@@ -268,7 +317,7 @@
    "store_url": "https://www.amazon.com/s?k=OVER+Amazon+Grocery+You"
   },
   {
-   "id": "Slickdeals:2568335594",
+   "id": "Slickdeals:8724071539",
    "source": "Slickdeals",
    "title": "Philips 100\" Class QLED+ 4K UHD Google Smart TV $998.00 + Free S&H at Walmart.com",
    "url": "https://slickdeals.net/f/19967289-philips-100-class-qled-4k-uhd-google-smart-tv-998-00-free-s-h-at-walmart-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -281,7 +330,7 @@
    "store_url": "https://www.walmart.com/search?q=Philips+Class+QLED+4K"
   },
   {
-   "id": "Hip2Save:545658884",
+   "id": "Hip2Save:6231073869",
    "source": "Hip2Save",
    "title": "50% Off PHLUR Fragrances on Sephora.com \u2013 Today ONLY",
    "url": "https://hip2save.com/deals/phlur-fragrances/",
@@ -298,7 +347,7 @@
    "store_url": "https://www.sephora.com/search?keyword=PHLUR+Fragrances+Sephora+com"
   },
   {
-   "id": "Hip2Save:5323651287",
+   "id": "Hip2Save:3056493840",
    "source": "Hip2Save",
    "title": "Score 3\u00a2 Labor Day Deals on Amazon Haul \u2013 Today Only!",
    "url": "https://hip2save.com/deals/amazon-haul-app/",
@@ -311,33 +360,7 @@
    "store_url": "https://www.amazon.com/s?k=Score+Labor+Day+Amazon"
   },
   {
-   "id": "Slickdeals:1373808581",
-   "source": "Slickdeals",
-   "title": "$19.58 | Fall Out Boy: American Beauty/American Psycho (Vinyl) at Amazon",
-   "url": "https://slickdeals.net/f/19959483-19-58-fall-out-boy-american-beauty-american-psycho-vinyl-at-amazon?utm_source=rss&utm_content=def&utm_medium=RSS2",
-   "created": 1788345310,
-   "score": 0,
-   "brands": [],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Amazon",
-   "store_url": "https://www.amazon.com/s?k=Fall+Out+Boy+American"
-  },
-  {
-   "id": "Slickdeals:3990695762",
-   "source": "Slickdeals",
-   "title": "$27.98 | The Weeknd: Beauty Behind The Madness (Vinyl) at Amazon",
-   "url": "https://slickdeals.net/f/19959480-27-98-the-weeknd-beauty-behind-the-madness-vinyl-at-amazon?utm_source=rss&utm_content=def&utm_medium=RSS2",
-   "created": 1788345297,
-   "score": 0,
-   "brands": [],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Amazon",
-   "store_url": "https://www.amazon.com/s?k=Weeknd+Beauty+Behind+Madness"
-  },
-  {
-   "id": "Slickdeals:4489229985",
+   "id": "Slickdeals:2090110919",
    "source": "Slickdeals",
    "title": "Sephora: Select Beauty Products 50% Off \u2013 Glow Recipe from $11, Briogeo from $12, ghd Flat Iron $119.50 & More + Free Shipping for Beauty Insiders",
    "url": "https://slickdeals.net/f/19955223-sephora-select-beauty-products-50-off-glow-recipe-from-11-briogeo-from-12-ghd-flat-iron-119-50-more-free-shipping-for-beauty-insiders?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -354,20 +377,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Select+Beauty+Products"
   },
   {
-   "id": "Slickdeals:9612616874",
-   "source": "Slickdeals",
-   "title": "[NEW] $9.78 | Fall Out Boy: American Beauty/American Psycho (Audio CD w/ AutoRip MP3) at Amazon",
-   "url": "https://slickdeals.net/f/19954029-new-9-78-fall-out-boy-american-beauty-american-psycho-audio-cd-w-autorip-mp3-at-amazon?utm_source=rss&utm_content=def&utm_medium=RSS2",
-   "created": 1788267070,
-   "score": 0,
-   "brands": [],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Amazon",
-   "store_url": "https://www.amazon.com/s?k=Fall+Out+Boy+American"
-  },
-  {
-   "id": "Hip2Save:9615727827",
+   "id": "Hip2Save:2194499808",
    "source": "Hip2Save",
    "title": "5 ULTA Beauty Halloween Minis Only $10 (Just $2 Each) \u2013 Perfect for Boo Baskets!",
    "url": "https://hip2save.com/deals/ulta-beauty-sweet-and-shimmer/",
@@ -380,7 +390,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Beauty+Halloween+Minis"
   },
   {
-   "id": "Hip2Save:736509150",
+   "id": "Hip2Save:1929523349",
    "source": "Hip2Save",
    "title": "50% Off LoveShackFancy Mists + Free Shipping on Sephora.com",
    "url": "https://hip2save.com/deals/love-shack-fancy-fragrance-mist/",
@@ -397,7 +407,7 @@
    "store_url": "https://www.sephora.com/search?keyword=LoveShackFancy+Mists+Shipping+Sephora"
   },
   {
-   "id": "Hip2Save:7739788050",
+   "id": "Hip2Save:3445837378",
    "source": "Hip2Save",
    "title": "Score 50% Off Touchland Body & Hair Mists on ULTA.com",
    "url": "https://hip2save.com/deals/touchland-mist/",
@@ -414,7 +424,7 @@
    "store_url": "https://www.ulta.com/search?query=Score+Touchland+Body+Hair"
   },
   {
-   "id": "Slickdeals:7403978984",
+   "id": "Slickdeals:6776222638",
    "source": "Slickdeals",
    "title": "KYLIE Hybrid Blush (8 colors) - $10.45 + free shipping",
    "url": "https://slickdeals.net/f/19943769-kylie-hybrid-blush-8-colors-10-45-free-shipping?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -429,7 +439,7 @@
    "store_url": null
   },
   {
-   "id": "Slickdeals:6319299585",
+   "id": "Slickdeals:8107636387",
    "source": "Slickdeals",
    "title": "Lancome Teint Idole Ultra Wear Natural Matte Foundation (55 Colors) - $25.18 + free shipping",
    "url": "https://slickdeals.net/f/19943751-lancome-teint-idole-ultra-wear-natural-matte-foundation-55-colors-25-18-free-shipping?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -444,7 +454,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:1860223323",
+   "id": "Hip2Save:5068304981",
    "source": "Hip2Save",
    "title": "First Aid Beauty Face Cleanser Only $5.70 Shipped on Amazon (Reg. $12)",
    "url": "https://hip2save.com/deals/amazon-first-aid-beauty-face-cleanser/",
@@ -459,7 +469,7 @@
    "store_url": "https://www.amazon.com/s?k=First+Aid+Beauty"
   },
   {
-   "id": "Slickdeals:4754763160",
+   "id": "Slickdeals:5926768247",
    "source": "Slickdeals",
    "title": "Ulta 21+ Days of Beauty Sale: Day 2 - 8/29: 50% off Beauty Steals",
    "url": "https://slickdeals.net/f/19940703-ulta-21-days-of-beauty-sale-day-2-8-29-50-off-beauty-steals?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -478,7 +488,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+Days+Beauty+Day"
   },
   {
-   "id": "Hip2Save:6445778142",
+   "id": "Hip2Save:1853504376",
    "source": "Hip2Save",
    "title": "Beautiful by Drew Barrymore Slow Cooker 2-Pack Just $25 on Walmart.com (Only $12.50 Each!)",
    "url": "https://hip2save.com/deals/beautiful-by-drew-barrymore-slow-cookers/",
@@ -491,7 +501,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Barrymore"
   },
   {
-   "id": "Hip2Save:1792687412",
+   "id": "Hip2Save:4613036025",
    "source": "Hip2Save",
    "title": "Wicked Caboodles Just $14.99 on ULTA.com (Reg. $30)",
    "url": "https://hip2save.com/deals/ulta-wicked-caboodles/",
@@ -504,7 +514,7 @@
    "store_url": "https://www.ulta.com/search?query=Wicked+Caboodles+Just+ULTA"
   },
   {
-   "id": "Slickdeals:6064522617",
+   "id": "Slickdeals:9862030532",
    "source": "Slickdeals",
    "title": "Sephora One-Day Deals 50% Off: Clinique Almost Lipstick $12.50 & More + Free Shipping",
    "url": "https://slickdeals.net/f/19937916-sephora-one-day-deals-50-off-clinique-almost-lipstick-12-50-more-free-shipping?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -523,7 +533,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Clinique"
   },
   {
-   "id": "Hip2Save:7693225946",
+   "id": "Hip2Save:6570107618",
    "source": "Hip2Save",
    "title": "Amazon Tide Pods Stock-Up Deal: 33% Off + Rebate = Just 6\u00a2 Each",
    "url": "https://hip2save.com/deals/amazon-tide-pods/",
@@ -540,7 +550,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Tide+Pods+Stock"
   },
   {
-   "id": "Slickdeals:4542243315",
+   "id": "Slickdeals:3315174465",
    "source": "Slickdeals",
    "title": "Costco - Ulta Beauty - Four $50 eGift Cards + One $40 eGift Card ($240 Total) - $199.99",
    "url": "https://slickdeals.net/f/19936359-costco-ulta-beauty-four-50-egift-cards-one-40-egift-card-240-total-199-99?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -553,7 +563,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Ulta+Beauty+Four"
   },
   {
-   "id": "Slickdeals:7240433166",
+   "id": "Slickdeals:3746905081",
    "source": "Slickdeals",
    "title": "Ulta 21+ Days of Beauty Sale: Select Beauty Products/Brands 50% Off (8/28 only) + Free S&H on $35+",
    "url": "https://slickdeals.net/f/19936347-ulta-21-days-of-beauty-sale-select-beauty-products-brands-50-off-8-28-only-free-s-h-on-35?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -572,7 +582,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+Days+Beauty+Select"
   },
   {
-   "id": "Hip2Save:380509078",
+   "id": "Hip2Save:2965585419",
    "source": "Hip2Save",
    "title": "Ulta Beauty Is Leaving Target, But Target Beauty Studio Is Coming + FREEBIES September 26!",
    "url": "https://hip2save.com/news/target-beauty-studio/",
@@ -585,7 +595,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+Beauty+Is+Leaving"
   },
   {
-   "id": "Hip2Save:8860668798",
+   "id": "Hip2Save:3920745457",
    "source": "Hip2Save",
    "title": "HOT Viva Paper Towels Stock Up Deal on Amazon",
    "url": "https://hip2save.com/deals/amazon-viva-paper-towels/",
@@ -598,7 +608,7 @@
    "store_url": "https://www.amazon.com/s?k=HOT+Viva+Paper+Towels"
   },
   {
-   "id": "Hip2Save:245361555",
+   "id": "Hip2Save:7218041807",
    "source": "Hip2Save",
    "title": "Up to 55% Off Kohl\u2019s Sephora | Save on Estee Lauder, OLEHENRIKSEN & More",
    "url": "https://hip2save.com/deals/kohls-sephora/",
@@ -617,7 +627,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Estee+Lauder"
   },
   {
-   "id": "Slickdeals:8369724493",
+   "id": "Slickdeals:1982384911",
    "source": "Slickdeals",
    "title": "Sephora Collection Best Skin Ever Multi-Use Hydrating Glow Concealer (Various Shades) $4 at Kohl's w/ Free Store Pickup",
    "url": "https://slickdeals.net/f/19926327-sephora-collection-best-skin-ever-multi-use-hydrating-glow-concealer-various-shades-4-at-kohl-s-w-free-store-pickup?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -630,7 +640,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Collection+Best+Skin"
   },
   {
-   "id": "Hip2Save:8525852290",
+   "id": "Hip2Save:9294479969",
    "source": "Hip2Save",
    "title": "This Gain Amazon Deal Has 3 Discounts Stacking",
    "url": "https://hip2save.com/deals/gain-laundry-detergent/",
@@ -643,7 +653,7 @@
    "store_url": "https://www.amazon.com/s?k=This+Gain+Amazon+Has"
   },
   {
-   "id": "Hip2Save:3879709223",
+   "id": "Hip2Save:3244456495",
    "source": "Hip2Save",
    "title": "Costco Has Alani Nu Witch\u2019s Brew for Just 92\u00a2 per Can (Best Deal Around!)",
    "url": "https://hip2save.com/deals/alani-nu-witches-brew/",
@@ -656,7 +666,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Has+Alani+Nu"
   },
   {
-   "id": "Slickdeals:9383817367",
+   "id": "Slickdeals:5382605092",
    "source": "Slickdeals",
    "title": "Costco - Get $25 or $60 Costco Shop Card When You Buy Select P&G Items",
    "url": "https://slickdeals.net/f/19919565-costco-get-25-or-60-costco-shop-card-when-you-buy-select-p-g-items?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -669,7 +679,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Costco+Shop+Card"
   },
   {
-   "id": "Hip2Save:1400568993",
+   "id": "Hip2Save:2107611277",
    "source": "Hip2Save",
    "title": "$40 Photo Canvas for $12?! Walgreens Dropped a HUGE Photo Deal",
    "url": "https://hip2save.com/deals/walgreens-canvas-prints/",
@@ -682,7 +692,7 @@
    "store_url": "https://www.walgreens.com/search/results.jsp?Ntt=Photo+Canvas+Walgreens+Dropped"
   },
   {
-   "id": "Hip2Save:4247504627",
+   "id": "Hip2Save:9303976799",
    "source": "Hip2Save",
    "title": "*HOT* $59 Worth of Aveeno & Neutrogena Products Just $1 After CVS Rewards",
    "url": "https://hip2save.com/deals/cvs-epic-beauty-sale/",
@@ -697,7 +707,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=Neutrogena"
   },
   {
-   "id": "Hip2Save:2194054059",
+   "id": "Hip2Save:7824835906",
    "source": "Hip2Save",
    "title": "Beautiful by Drew Barrymore Sipper Tumblers Just $3.97 on Walmart.com",
    "url": "https://hip2save.com/deals/beautiful-tumblers/",
@@ -710,7 +720,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Barrymore"
   },
   {
-   "id": "Hip2Save:4255225898",
+   "id": "Hip2Save:1945595649",
    "source": "Hip2Save",
    "title": "Taste Beauty Lip Sips Give Us Owala Vibes & They\u2019re Just $4.52 at Walmart!",
    "url": "https://hip2save.com/deals/taste-beauty-lip-sips/",
@@ -723,7 +733,7 @@
    "store_url": "https://www.walmart.com/search?q=Taste+Beauty+Lip+Sips"
   },
   {
-   "id": "Hip2Save:7345721937",
+   "id": "Hip2Save:6402275289",
    "source": "Hip2Save",
    "title": "Amazon Swimwear Deals From $6 \u2014 Even Maternity Swimsuits!",
    "url": "https://hip2save.com/deals/amazon-essentials-swimwear/",
@@ -736,7 +746,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Swimwear+From+Even"
   },
   {
-   "id": "Hip2Save:8688209968",
+   "id": "Hip2Save:2641465132",
    "source": "Hip2Save",
    "title": "ULTA Halloween & Fall-Themed Gift Sets Just $12.60 (Reg. $20)",
    "url": "https://hip2save.com/deals/ulta-gift-sets/",
@@ -749,7 +759,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Halloween+Fall+Themed"
   },
   {
-   "id": "Hip2Save:1777836127",
+   "id": "Hip2Save:6444235572",
    "source": "Hip2Save",
    "title": "Walmart Summer Beauty Box Just $8.98 Shipped (Full-Size Products Included!)",
    "url": "https://hip2save.com/deals/walmart-beauty-boxes/",
@@ -762,7 +772,7 @@
    "store_url": "https://www.walmart.com/search?q=Walmart+Summer+Beauty+Box"
   },
   {
-   "id": "Hip2Save:6286050364",
+   "id": "Hip2Save:7829653386",
    "source": "Hip2Save",
    "title": "GoGo squeeZ Just 43\u00a2 a Pouch?! Amazon\u2019s $5 Off Grocery Deal Is SO Good",
    "url": "https://hip2save.com/deals/amazon-good-good-promo/",
@@ -779,7 +789,7 @@
    "store_url": "https://www.amazon.com/s?k=GoGo+squeeZ+Just+Pouch"
   },
   {
-   "id": "Slickdeals:7759862565",
+   "id": "Slickdeals:3109005911",
    "source": "Slickdeals",
    "title": "Select DashPass Members: Select eGift Cards (Ulta, GAP, H&M, DSW & More) up to 15% Off (Maximum Discount of $30)",
    "url": "https://slickdeals.net/f/19889727-select-dashpass-members-select-egift-cards-ulta-gap-h-m-dsw-more-up-to-15-off-maximum-discount-of-30?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -796,7 +806,7 @@
    "store_url": "https://www.ulta.com/search?query=Select+DashPass+Members+Select"
   },
   {
-   "id": "Hip2Save:187460824",
+   "id": "Hip2Save:4732301193",
    "source": "Hip2Save",
    "title": "FREE Amazon Music + Audible?! Get 2 Months Free Before This Deal Ends",
    "url": "https://hip2save.com/deals/amazon-music-unlimited/",
@@ -809,7 +819,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Music+Audible+Months"
   },
   {
-   "id": "Hip2Save:8462822327",
+   "id": "Hip2Save:5617997784",
    "source": "Hip2Save",
    "title": "WOW! Score $43 Worth of Makeup & Skincare for Just 79\u00a2 at CVS",
    "url": "https://hip2save.com/deals/cvs-beauty/",
@@ -822,20 +832,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=WOW+Score+Worth+Makeup"
   },
   {
-   "id": "Hip2Save:1364575036",
-   "source": "Hip2Save",
-   "title": "Don\u2019t Sleep on This Deal: Weighted Sleep Mask Only $4.99 on Amazon",
-   "url": "https://hip2save.com/deals/sleep-mask/",
-   "created": 1786663800,
-   "score": 0,
-   "brands": [],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Amazon",
-   "store_url": "https://www.amazon.com/s?k=Don+t+Sleep+This"
-  },
-  {
-   "id": "Slickdeals:6672551182",
+   "id": "Slickdeals:2211105754",
    "source": "Slickdeals",
    "title": "Verizon Shine Rewards: $10 Sephora Gift Card",
    "url": "https://slickdeals.net/f/19875963-verizon-shine-rewards-10-sephora-gift-card?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -848,7 +845,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Verizon+Shine+Rewards+Sephora"
   },
   {
-   "id": "Hip2Save:3818890602",
+   "id": "Hip2Save:6417709841",
    "source": "Hip2Save",
    "title": "CVS Deal: TWO Q-Tips Travel Packs Only 37\u00a2 Each",
    "url": "https://hip2save.com/deals/q-tips-precision-tips/",
@@ -861,7 +858,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=CVS+TWO+Q+Tips"
   },
   {
-   "id": "Slickdeals:533540216",
+   "id": "Slickdeals:5850318912",
    "source": "Slickdeals",
    "title": "[S&S] $7.72: Sun Bum Original SPF 70 Sunscreen Face Lotion (3 oz)",
    "url": "https://slickdeals.net/f/19867713-s-s-7-72-sun-bum-original-spf-70-sunscreen-face-lotion-3-oz?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -876,7 +873,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:3028208789",
+   "id": "Hip2Save:3845877052",
    "source": "Hip2Save",
    "title": "Stack Target Deals to Save BIG on Dove Body Wash & Soap",
    "url": "https://hip2save.com/deals/target-dove/",
@@ -889,7 +886,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Stack+Target+Save+BIG"
   },
   {
-   "id": "Hip2Save:7703995964",
+   "id": "Hip2Save:5892641931",
    "source": "Hip2Save",
    "title": "RARE $10 Off $40 ULTA Promo Code | Includes Prestige Brands & Fragrances",
    "url": "https://hip2save.com/deals/ulta-promo/",
@@ -908,7 +905,7 @@
    "store_url": "https://www.ulta.com/search?query=RARE+ULTA+Promo+Code"
   },
   {
-   "id": "Hip2Save:1267935758",
+   "id": "Hip2Save:7153217206",
    "source": "Hip2Save",
    "title": "Up to 50% Off Kohl\u2019s Sephora Perfumes (Marc Jacobs, Dolce&Gabbana, Philosophy)",
    "url": "https://hip2save.com/deals/sephora-perfume/",
@@ -927,7 +924,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Philosophy"
   },
   {
-   "id": "Slickdeals:7939157034",
+   "id": "Slickdeals:7338896978",
    "source": "Slickdeals",
    "title": "Torriden DIVE-IN Low-Molecular Hyaluronic Acid Serum Set 1.69 oz $14.97 at Costco in store only. YMMV",
    "url": "https://slickdeals.net/f/19846752-torriden-dive-in-low-molecular-hyaluronic-acid-serum-set-1-69-oz-14-97-at-costco-in-store-only-ymmv?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -940,22 +937,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Torriden+DIVE+Low+Molecular"
   },
   {
-   "id": "Slickdeals:6348139270",
-   "source": "Slickdeals",
-   "title": "Olaplex Shampoo and Conditioner - 2 for $48 + Free Shipping - Ulta.com",
-   "url": "https://slickdeals.net/f/19840545-olaplex-shampoo-and-conditioner-2-for-48-free-shipping-ulta-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
-   "created": 1785800830,
-   "score": 0,
-   "brands": [
-    "Olaplex"
-   ],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Ulta",
-   "store_url": "https://www.ulta.com/search?query=Olaplex"
-  },
-  {
-   "id": "Hip2Save:753175233",
+   "id": "Hip2Save:9326805972",
    "source": "Hip2Save",
    "title": "$100 Worth of FREE Dunkin\u2019, Domino\u2019s, Sephora & More?!",
    "url": "https://hip2save.com/deals/paze-promo/",
@@ -968,20 +950,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Worth+Dunkin+Domino+s"
   },
   {
-   "id": "Slickdeals:4989218395",
-   "source": "Slickdeals",
-   "title": "Save $10 ac on a $40 Online Pick Up order at ULTA BEAUTY",
-   "url": "https://slickdeals.net/f/19840371-save-10-ac-on-a-40-online-pick-up-order-at-ulta-beauty?utm_source=rss&utm_content=def&utm_medium=RSS2",
-   "created": 1785797434,
-   "score": 0,
-   "brands": [],
-   "types": [],
-   "type_labels": [],
-   "retailer": "Ulta",
-   "store_url": "https://www.ulta.com/search?query=Save+ac+Online+Pick"
-  },
-  {
-   "id": "Hip2Save:1122791557",
+   "id": "Hip2Save:5337141803",
    "source": "Hip2Save",
    "title": "Amazon Silk Pillowcase Deal: Smoother Hair and Less Frizz for Only $4.47",
    "url": "https://hip2save.com/deals/infiixso-silk-pillowcase/",
@@ -994,7 +963,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Silk+Pillowcase+Smoother"
   },
   {
-   "id": "Hip2Save:1728008362",
+   "id": "Hip2Save:3505696889",
    "source": "Hip2Save",
    "title": "*HOT* Brand-New ULTA Beauty Kits from $19 (Up to $116 Value!)",
    "url": "https://hip2save.com/deals/ulta-sample-kits/",
@@ -1007,7 +976,7 @@
    "store_url": "https://www.ulta.com/search?query=HOT+Brand+ULTA+Beauty"
   },
   {
-   "id": "Slickdeals:2157942695",
+   "id": "Slickdeals:1183190098",
    "source": "Slickdeals",
    "title": "Beauty of jos\u00e9on dynasty cream 3.38 Oz (jumbo) x2, $18.97 at Costco",
    "url": "https://slickdeals.net/f/19824783-beauty-of-jos-on-dynasty-cream-3-38-oz-jumbo-x2-18-97-at-costco?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1024,7 +993,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Beauty+jos%C3%A9on+dynasty+cream"
   },
   {
-   "id": "Hip2Save:7102760175",
+   "id": "Hip2Save:3506883391",
    "source": "Hip2Save",
    "title": "Tree Hut Lisa Frank Collection Only $8.79 at ULTA (Includes Exclusive Scent!)",
    "url": "https://hip2save.com/deals/tree-hut-lisa-frank/",
@@ -1039,7 +1008,7 @@
    "store_url": "https://www.ulta.com/search?query=Tree+Hut"
   },
   {
-   "id": "Hip2Save:3086773660",
+   "id": "Hip2Save:9672230705",
    "source": "Hip2Save",
    "title": "Up to 50% Off Sephora Lip Favorites + Free Shipping & Samples (Prices from $6 Shipped)",
    "url": "https://hip2save.com/deals/sephora-lip-products/",
@@ -1056,7 +1025,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Lip+Favorites+Shipping"
   },
   {
-   "id": "Slickdeals:3914390922",
+   "id": "Slickdeals:9751421048",
    "source": "Slickdeals",
    "title": "0.13 oz Fenty Beauty by Rihanna Stunna Lip Paint Longwear Liquid Lipstick (Unveil - Chocolate Brown) $14.50 + Free Shipping on $49+",
    "url": "https://slickdeals.net/f/19818948-0-13-oz-fenty-beauty-by-rihanna-stunna-lip-paint-longwear-liquid-lipstick-unveil-chocolate-brown-14-50-free-shipping-on-49?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1071,7 +1040,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:3508380263",
+   "id": "Hip2Save:4765603940",
    "source": "Hip2Save",
    "title": "TJ Maxx Yellow Tag Clearance is Live | We Spotted Deals on adidas, Lucky Brand, & More",
    "url": "https://hip2save.com/deals/tj-maxx-clearance/",
@@ -1088,7 +1057,7 @@
    "store_url": "https://tjmaxx.tjx.com/store/shop/_/N-0?q=TJ+Maxx+Yellow+Tag"
   },
   {
-   "id": "Hip2Save:5802455726",
+   "id": "Hip2Save:7553988932",
    "source": "Hip2Save",
    "title": "Up to 50% Off ULTA Lipsticks = MAC, Clinique, & More from $8.40",
    "url": "https://hip2save.com/deals/ulta-lipstick-sale/",
@@ -1107,7 +1076,7 @@
    "store_url": "https://www.ulta.com/search?query=Clinique"
   },
   {
-   "id": "Hip2Save:898278156",
+   "id": "Hip2Save:9080528822",
    "source": "Hip2Save",
    "title": "Grab Bath & Body Works Favorites at ULTA Starting at $7",
    "url": "https://hip2save.com/deals/ulta-bath-body-works/",
@@ -1120,7 +1089,7 @@
    "store_url": "https://www.ulta.com/search?query=Grab+Bath+Body+Works"
   },
   {
-   "id": "Hip2Save:6456429059",
+   "id": "Hip2Save:413346065",
    "source": "Hip2Save",
    "title": "*HOT* Macy\u2019s Beauty Sale | Up to 50% Off Clinique, Lanc\u00f4me, MAC, & More!",
    "url": "https://hip2save.com/deals/macys-beauty-sale/",
@@ -1142,7 +1111,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:8362603903",
+   "id": "Hip2Save:6376868369",
    "source": "Hip2Save",
    "title": "Up to 75% Off Beautiful by Drew Furniture on Walmart.com",
    "url": "https://hip2save.com/deals/beautiful-by-drew-furniture/",
@@ -1159,7 +1128,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Furniture"
   },
   {
-   "id": "Hip2Save:1796152252",
+   "id": "Hip2Save:2878733563",
    "source": "Hip2Save",
    "title": "One of the Best Walgreens Deals This Week Is on Nuts (Including Dill Pickle Cashews!)",
    "url": "https://hip2save.com/deals/walgreens-nuts/",
@@ -1172,7 +1141,7 @@
    "store_url": "https://www.walgreens.com/search/results.jsp?Ntt=Best+Walgreens+This+Week"
   },
   {
-   "id": "Slickdeals:7412564336",
+   "id": "Slickdeals:9515869429",
    "source": "Slickdeals",
    "title": "FENTY BEAUTY by Rihanna Pro Filt'r Soft Matte Longwear Liquid Foundation $20",
    "url": "https://slickdeals.net/f/19800021-fenty-beauty-by-rihanna-pro-filt-r-soft-matte-longwear-liquid-foundation-20?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1187,7 +1156,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:4292306662",
+   "id": "Hip2Save:896445020",
    "source": "Hip2Save",
    "title": "Up to 70% Off Pacifica Beauty | Blush, Lip Treatments, & More from $3",
    "url": "https://hip2save.com/deals/pacifica-beauty/",
@@ -1206,7 +1175,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:2440113958",
+   "id": "Hip2Save:180031521",
    "source": "Hip2Save",
    "title": "RUN! Up to $40 Off Sephora & $20 off Petco Orders for DoorDash DashPass Members (Today Only!)",
    "url": "https://hip2save.com/deals/doordash-promo-code/",
@@ -1223,7 +1192,7 @@
    "store_url": "https://www.sephora.com/search?keyword=RUN+Sephora+Petco+Orders"
   },
   {
-   "id": "Hip2Save:5941569084",
+   "id": "Hip2Save:611097614",
    "source": "Hip2Save",
    "title": "Sephora\u2019s Sensory-Friendly Quiet Hours Are Rolling Out to Stores",
    "url": "https://hip2save.com/news/sephora-quiet-hours/",
@@ -1236,7 +1205,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+s+Sensory+Friendly"
   },
   {
-   "id": "Slickdeals:4190199362",
+   "id": "Slickdeals:787477035",
    "source": "Slickdeals",
    "title": "Weds 7/22 DASHPASS $40 off $100 at SEPHORA",
    "url": "https://slickdeals.net/f/19791063-weds-7-22-dashpass-40-off-100-at-sephora?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1253,7 +1222,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Weds+DASHPASS+SEPHORA"
   },
   {
-   "id": "Hip2Save:5341402647",
+   "id": "Hip2Save:1242718780",
    "source": "Hip2Save",
    "title": "Monopoly Deal How the Grinch Stole Christmas Available on Amazon (& May Sell Out!)",
    "url": "https://hip2save.com/deals/monopoly-deal-grinch/",
@@ -1266,7 +1235,7 @@
    "store_url": "https://www.amazon.com/s?k=Monopoly+How+Grinch+Stole"
   },
   {
-   "id": "Hip2Save:7732973087",
+   "id": "Hip2Save:7490354572",
    "source": "Hip2Save",
    "title": "BOGO Free Beauty on Amazon: Hot Savings on Clinique, tarte, & More!",
    "url": "https://hip2save.com/deals/amazon-beauty/",
@@ -1286,7 +1255,7 @@
    "store_url": "https://www.amazon.com/s?k=Clinique"
   },
   {
-   "id": "Hip2Save:2166697358",
+   "id": "Hip2Save:7938349879",
    "source": "Hip2Save",
    "title": "Buy 1, Get 1 FREE Minis at ULTA | Pureology, Drunk Elephant, Sol de Janeiro & More",
    "url": "https://hip2save.com/deals/ulta-beauty-minis/",
@@ -1301,7 +1270,7 @@
    "store_url": "https://www.ulta.com/search?query=Sol+De+Janeiro"
   },
   {
-   "id": "Hip2Save:6632682464",
+   "id": "Hip2Save:9966986511",
    "source": "Hip2Save",
    "title": "Beautiful by Drew Carry-On Hardside Luggage Only $27 on Walmart.com (Reg. $78)",
    "url": "https://hip2save.com/deals/beautiful-by-drew-barrymore-luggage/",
@@ -1314,7 +1283,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Carry"
   },
   {
-   "id": "Hip2Save:5762150652",
+   "id": "Hip2Save:7701154159",
    "source": "Hip2Save",
    "title": "Buy 1, Get 1 FREE Beauty Minis on Amazon (Supergoop, Clinique, Origins, & More)",
    "url": "https://hip2save.com/deals/amazon-beauty-minis/",
@@ -1330,7 +1299,7 @@
    "store_url": "https://www.amazon.com/s?k=Clinique"
   },
   {
-   "id": "Hip2Save:8218085479",
+   "id": "Hip2Save:2962427715",
    "source": "Hip2Save",
    "title": "Hot CVS Deal: NIVEA & NIVEA MEN Body Washes from $2.49 Each After Rewards & Coupon",
    "url": "https://hip2save.com/deals/cvs-nivea-body-wash/",
@@ -1347,7 +1316,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=Hot+CVS+NIVEA+NIVEA"
   },
   {
-   "id": "Slickdeals:7899241925",
+   "id": "Slickdeals:4076780956",
    "source": "Slickdeals",
    "title": "Verizon Shine Rewards: $10 Sephora Gift Card",
    "url": "https://slickdeals.net/f/19766397-verizon-shine-rewards-10-sephora-gift-card?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1360,7 +1329,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Verizon+Shine+Rewards+Sephora"
   },
   {
-   "id": "Hip2Save:588165860",
+   "id": "Hip2Save:5158913621",
    "source": "Hip2Save",
    "title": "Been Waiting for a Ninja CREAMi Deal? It\u2019s Just $129.99 Shipped on Amazon",
    "url": "https://hip2save.com/deals/ninja-creami/",
@@ -1373,7 +1342,7 @@
    "store_url": "https://www.amazon.com/s?k=Been+Waiting+Ninja+CREAMi"
   },
   {
-   "id": "Hip2Save:2292081",
+   "id": "Hip2Save:9232496476",
    "source": "Hip2Save",
    "title": "ULTA Summer Sale Ends Tonight | Up to 50% Off Beauty & Haircare + BOGO FREE Mascaras",
    "url": "https://hip2save.com/deals/ulta-sale/",
@@ -1394,7 +1363,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Summer+Ends+Tonight"
   },
   {
-   "id": "Slickdeals:6208175635",
+   "id": "Slickdeals:9646474642",
    "source": "Slickdeals",
    "title": "50% off rarely on sale Sephora products at Kohl's $155",
    "url": "https://slickdeals.net/f/19747170-50-off-rarely-on-sale-sephora-products-at-kohl-s-155?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1413,7 +1382,7 @@
    "store_url": "https://www.sephora.com/search?keyword=rarely+Sephora+products+Kohl%27s"
   },
   {
-   "id": "Hip2Save:1015127251",
+   "id": "Hip2Save:9768644948",
    "source": "Hip2Save",
    "title": "Up to 75% Off ULTA Cosmetics + FREE Summer Tote w/ Purchase",
    "url": "https://hip2save.com/deals/ulta-cosmetics/",
@@ -1430,7 +1399,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Cosmetics+Summer+Tote"
   },
   {
-   "id": "Hip2Save:7043932544",
+   "id": "Hip2Save:4173403660",
    "source": "Hip2Save",
    "title": "Kitsch Shampoo & Conditioner Bar Sampler Set Only $9.59 Shipped on Amazon",
    "url": "https://hip2save.com/deals/kitsch-beauty/",
@@ -1443,7 +1412,7 @@
    "store_url": "https://www.amazon.com/s?k=Kitsch+Shampoo+Conditioner+Bar"
   },
   {
-   "id": "Hip2Save:7146484365",
+   "id": "Hip2Save:487459651",
    "source": "Hip2Save",
    "title": "Target Is Replacing Ulta Beauty Shops With a Brand-New Beauty Experience",
    "url": "https://hip2save.com/deals/ulta-beauty-target-stores/",
@@ -1456,7 +1425,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Target+Is+Replacing+Ulta"
   },
   {
-   "id": "Slickdeals:5642972615",
+   "id": "Slickdeals:2772705304",
    "source": "Slickdeals",
    "title": "Shark SpeedStyle Pro Hair Dryer System Plus Storage Bag $159.99 Free Shipping Costco.com",
    "url": "https://slickdeals.net/f/19712001-shark-speedstyle-pro-hair-dryer-system-plus-storage-bag-159-99-free-shipping-costco-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1471,7 +1440,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Shark"
   },
   {
-   "id": "Slickdeals:9969760167",
+   "id": "Slickdeals:9034130287",
    "source": "Slickdeals",
    "title": "Sephora Collection Glaze Hydrating Lip Balm $4.20  & More + Free Shipping",
    "url": "https://slickdeals.net/f/19710189-sephora-collection-glaze-hydrating-lip-balm-4-20-more-free-shipping?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1484,7 +1453,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Collection+Glaze+Hydrating"
   },
   {
-   "id": "Hip2Save:6049364575",
+   "id": "Hip2Save:3671138731",
    "source": "Hip2Save",
    "title": "Holler Beauty Gift Sets Only $4 on Walmart.com (Reg. $8) | Lip Oil, Highlighter, Blush, & More",
    "url": "https://hip2save.com/deals/holler-beauty/",
@@ -1497,7 +1466,7 @@
    "store_url": "https://www.walmart.com/search?q=Holler+Beauty+Gift+Sets"
   },
   {
-   "id": "Slickdeals:1331777608",
+   "id": "Slickdeals:820759674",
    "source": "Slickdeals",
    "title": "PLA Beauty 9-piece Gel Nail Polish Kit with UV/LED Lamp $24.99 free shipping Costco.com",
    "url": "https://slickdeals.net/f/19703526-pla-beauty-9-piece-gel-nail-polish-kit-with-uv-led-lamp-24-99-free-shipping-costco-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1510,7 +1479,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=PLA+Beauty+piece+Gel"
   },
   {
-   "id": "Slickdeals:2801970905",
+   "id": "Slickdeals:8033676360",
    "source": "Slickdeals",
    "title": "PLA Beauty 7-piece Nail Lacquer Polish Kit $16.99 Free Shipping Costco.com",
    "url": "https://slickdeals.net/f/19703361-pla-beauty-7-piece-nail-lacquer-polish-kit-16-99-free-shipping-costco-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1523,7 +1492,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=PLA+Beauty+piece+Nail"
   },
   {
-   "id": "Hip2Save:3365180650",
+   "id": "Hip2Save:9492502598",
    "source": "Hip2Save",
    "title": "Walmart Deals Week Ends TODAY\u2026 These Are the Best Ones!",
    "url": "https://hip2save.com/deals/walmart-prime-day/",
@@ -1536,7 +1505,7 @@
    "store_url": "https://www.walmart.com/search?q=Walmart+Week+Ends+These"
   },
   {
-   "id": "Hip2Save:5320494234",
+   "id": "Hip2Save:6112590232",
    "source": "Hip2Save",
    "title": "RARE 45% Off Vacation Sunscreen w/ Stacking Offers on ULTA.com",
    "url": "https://hip2save.com/deals/vacation-body-care/",
@@ -1553,7 +1522,7 @@
    "store_url": "https://www.ulta.com/search?query=RARE+Vacation+Sunscreen+w"
   },
   {
-   "id": "Hip2Save:272419979",
+   "id": "Hip2Save:4754710683",
    "source": "Hip2Save",
    "title": "Last Chance to Shop Target Circle Deal Days | BIG Savings on Swimwear, Clothing & More",
    "url": "https://hip2save.com/deals/target-circle-deal-days/",
@@ -1566,7 +1535,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Last+Chance+Shop+Target"
   },
   {
-   "id": "Hip2Save:1324699670",
+   "id": "Hip2Save:3102737693",
    "source": "Hip2Save",
    "title": "The Best Amazon Prime Day Deals to Grab Before They\u2019re Gone!",
    "url": "https://hip2save.com/deals/best-amazon-prime-day-deals/",
@@ -1579,7 +1548,7 @@
    "store_url": "https://www.amazon.com/s?k=Best+Amazon+Prime+Day"
   },
   {
-   "id": "Hip2Save:9595655319",
+   "id": "Hip2Save:9384474001",
    "source": "Hip2Save",
    "title": "Today\u2019s Target Deals Include 40% Off Swimsuits, Toys & More!",
    "url": "https://hip2save.com/deals/target-daily-deals/",
@@ -1596,7 +1565,7 @@
    "store_url": "https://www.target.com/s?searchTerm=s+Target+Include+Swimsuits"
   },
   {
-   "id": "Hip2Save:1973088582",
+   "id": "Hip2Save:5058035546",
    "source": "Hip2Save",
    "title": "Amazon Shoppers Can Stack This Tide Deal for Huge Savings",
    "url": "https://hip2save.com/deals/tide-simply/",
@@ -1609,7 +1578,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Shoppers+Can+Stack"
   },
   {
-   "id": "Slickdeals:8923009109",
+   "id": "Slickdeals:682221497",
    "source": "Slickdeals",
    "title": "Shark SpeedStyle Pro Hair Dryer System Plus Storage Bag $159.99 Free Shipping Costco.com",
    "url": "https://slickdeals.net/f/19674207-shark-speedstyle-pro-hair-dryer-system-plus-storage-bag-159-99-free-shipping-costco-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1624,7 +1593,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Shark"
   },
   {
-   "id": "Hip2Save:5220609622",
+   "id": "Hip2Save:6207526221",
    "source": "Hip2Save",
    "title": "Up to 60% Off Anastasia Beverly Hills Beauty Products + Free Shipping for Amazon Prime Members",
    "url": "https://hip2save.com/deals/anastasia-beverly-hills/",
@@ -1643,7 +1612,7 @@
    "store_url": "https://www.amazon.com/s?k=Anastasia+Beverly+Hills"
   },
   {
-   "id": "Hip2Save:4972546294",
+   "id": "Hip2Save:6150275462",
    "source": "Hip2Save",
    "title": "Up to 65% Off Amazon Haul Household Deals | Seventh Generation, Mrs. Meyers, Cleancult, & More",
    "url": "https://hip2save.com/deals/amazon-haul-household/",
@@ -1660,7 +1629,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Haul+Household+Seventh"
   },
   {
-   "id": "Hip2Save:7946069623",
+   "id": "Hip2Save:5655473588",
    "source": "Hip2Save",
    "title": "Rare Savings on Korean Beauty Skincare on Amazon (Great for Sensitive Skin)",
    "url": "https://hip2save.com/deals/elroel-korean-beauty/",
@@ -1673,7 +1642,7 @@
    "store_url": "https://www.amazon.com/s?k=Rare+Savings+Korean+Beauty"
   },
   {
-   "id": "Hip2Save:3755687796",
+   "id": "Hip2Save:3337538890",
    "source": "Hip2Save",
    "title": "Amazon Prime Day Kicks Off 6/23 | Shop Early Deals NOW + Enter to Win a $10,000 Gift Card!",
    "url": "https://hip2save.com/tips/get-ready-for-amazon-prime-day/",
@@ -1686,7 +1655,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Prime+Day+Kicks"
   },
   {
-   "id": "Hip2Save:4629970806",
+   "id": "Hip2Save:6785587840",
    "source": "Hip2Save",
    "title": "Beautiful by Drew Kitchen Appliances from $19.98 on Walmart.com (Reg. $40+!)",
    "url": "https://hip2save.com/deals/beautiful-by-drew-barrymore/",
@@ -1699,7 +1668,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Kitchen"
   },
   {
-   "id": "Hip2Save:5867827384",
+   "id": "Hip2Save:8098060857",
    "source": "Hip2Save",
    "title": "Up to 75% Off TonyMoly Products on ULTA.com",
    "url": "https://hip2save.com/deals/tonymoly/",
@@ -1716,7 +1685,7 @@
    "store_url": "https://www.ulta.com/search?query=TonyMoly+Products+ULTA+com"
   },
   {
-   "id": "Hip2Save:530126718",
+   "id": "Hip2Save:1048629415",
    "source": "Hip2Save",
    "title": "Amazon Prime Day Early Access Deals",
    "url": "https://hip2save.com/deals/amazon-prime-day-early-access/",
@@ -1729,7 +1698,7 @@
    "store_url": "https://www.amazon.com/s?k=Amazon+Prime+Day+Early"
   },
   {
-   "id": "Hip2Save:1382370493",
+   "id": "Hip2Save:3001460115",
    "source": "Hip2Save",
    "title": "Target Shoppers: Use This Price Match Hack Before Deal Days Start!",
    "url": "https://hip2save.com/tips/does-target-price-match/",
@@ -1742,7 +1711,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Target+Shoppers+Use+This"
   },
   {
-   "id": "Hip2Save:5546265786",
+   "id": "Hip2Save:4790274741",
    "source": "Hip2Save",
    "title": "Rare Savings on St. Tropez Self-Tanners on Sephora.com \u2013 Get Summer Vacay Ready!",
    "url": "https://hip2save.com/deals/st-tropez-self-tanner/",
@@ -1755,7 +1724,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Rare+Savings+St+Tropez"
   },
   {
-   "id": "Hip2Save:8162084604",
+   "id": "Hip2Save:5145293240",
    "source": "Hip2Save",
    "title": "Last Day! Target Household Stock Up Deal: 50% Off Tide Simply Detergent After Gift Card!",
    "url": "https://hip2save.com/deals/target-household-items/",
@@ -1772,7 +1741,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Last+Day+Target+Household"
   },
   {
-   "id": "Hip2Save:7273520578",
+   "id": "Hip2Save:9442350248",
    "source": "Hip2Save",
    "title": "HOT! Up to 80% Off Bridgerton Perfume on ULTA.com",
    "url": "https://hip2save.com/deals/ulta-bridgerton-perfume/",
@@ -1789,7 +1758,7 @@
    "store_url": "https://www.ulta.com/search?query=HOT+Bridgerton+Perfume+ULTA"
   },
   {
-   "id": "Slickdeals:8266893011",
+   "id": "Slickdeals:7635339022",
    "source": "Slickdeals",
    "title": "Selected Costco Location: Nintendo Switch 2 Power A Bundle: Advantage Wired Controller and Slim Case $9.97",
    "url": "https://slickdeals.net/f/19599009-selected-costco-location-nintendo-switch-2-power-a-bundle-advantage-wired-controller-and-slim-case-9-97?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1802,7 +1771,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Selected+Costco+Location+Nintendo"
   },
   {
-   "id": "Slickdeals:6777253636",
+   "id": "Slickdeals:587312648",
    "source": "Slickdeals",
    "title": "Costco Business Center Savings Event start June 15, 2026",
    "url": "https://slickdeals.net/f/19584888-costco-business-center-savings-event-start-june-15-2026?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1815,7 +1784,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Business+Center+Savings"
   },
   {
-   "id": "Hip2Save:1507789852",
+   "id": "Hip2Save:9176305830",
    "source": "Hip2Save",
    "title": "Children\u2019s Claritin 30-Day Supply $11.99 After CVS Rewards + More Allergy Medicine Deals",
    "url": "https://hip2save.com/deals/cvs-allergy-medicine/",
@@ -1828,7 +1797,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=Children+s+Claritin+Day"
   },
   {
-   "id": "Hip2Save:1935154233",
+   "id": "Hip2Save:7156647322",
    "source": "Hip2Save",
    "title": "Walmart\u2019s Rollback Prices + Cash Back = Great Deals on Armor All Wipes",
    "url": "https://hip2save.com/deals/armor-all-wipes/",
@@ -1841,7 +1810,7 @@
    "store_url": "https://www.walmart.com/search?q=Walmart+s+Rollback+Prices"
   },
   {
-   "id": "Hip2Save:2848248337",
+   "id": "Hip2Save:2522247754",
    "source": "Hip2Save",
    "title": "ELEMIS Fragrance Free Pro-Collagen Cleansing Balm Just $25.99 Shipped (It\u2019s $72 at ULTA)",
    "url": "https://hip2save.com/deals/elemis-cleansing-balm/",
@@ -1856,7 +1825,7 @@
    "store_url": "https://www.ulta.com/search?query=Elemis"
   },
   {
-   "id": "Hip2Save:1052819773",
+   "id": "Hip2Save:7310817258",
    "source": "Hip2Save",
    "title": "Last Chance to Score 7 Full-Size Tarte Products for $11 Each (Includes Shape Tape!)",
    "url": "https://hip2save.com/deals/tarte-beauty-kit/",
@@ -1871,7 +1840,7 @@
    "store_url": null
   },
   {
-   "id": "Slickdeals:7207422636",
+   "id": "Slickdeals:5744105352",
    "source": "Slickdeals",
    "title": "Aquaterra Spas Aryana 45-jet, 5-person Rotomolded Spa $3399.99 @Costco",
    "url": "https://slickdeals.net/f/19529943-aquaterra-spas-aryana-45-jet-5-person-rotomolded-spa-3399-99-costco?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1884,7 +1853,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Aquaterra+Spas+Aryana+jet"
   },
   {
-   "id": "Hip2Save:2104962978",
+   "id": "Hip2Save:5820324387",
    "source": "Hip2Save",
    "title": "Best Amazon Pet Day Deals | Save Big on Treats, Toys, Accessories, & More",
    "url": "https://hip2save.com/deals/amazon-pet-day/",
@@ -1897,7 +1866,7 @@
    "store_url": "https://www.amazon.com/s?k=Best+Amazon+Pet+Day"
   },
   {
-   "id": "Hip2Save:8259262821",
+   "id": "Hip2Save:62891569",
    "source": "Hip2Save",
    "title": "Up to 75% Off ColourPop Cosmetics on ULTA.com",
    "url": "https://hip2save.com/deals/colourpop-makeup/",
@@ -1916,7 +1885,7 @@
    "store_url": "https://www.ulta.com/search?query=Colourpop"
   },
   {
-   "id": "Hip2Save:9349616143",
+   "id": "Hip2Save:4959595121",
    "source": "Hip2Save",
    "title": "FREE $20 eReward Card w/ $100 Ulta Gift Card Purchase",
    "url": "https://hip2save.com/deals/ulta-gift-card/",
@@ -1929,7 +1898,7 @@
    "store_url": "https://www.ulta.com/search?query=eReward+Card+w+Ulta"
   },
   {
-   "id": "Hip2Save:351296273",
+   "id": "Hip2Save:771873416",
    "source": "Hip2Save",
    "title": "Amazon Beauty Event Ends TONIGHT | Up to 70% Off Neutrogena, Medicube, & More",
    "url": "https://hip2save.com/deals/amazon-beauty-event/",
@@ -1948,7 +1917,7 @@
    "store_url": "https://www.amazon.com/s?k=Neutrogena"
   },
   {
-   "id": "Slickdeals:5774902778",
+   "id": "Slickdeals:6114160441",
    "source": "Slickdeals",
    "title": "Shark SpeedStyle Pro Hair Dryer System Plus Storage Bag  $159.99 Shipping Included Costco.com",
    "url": "https://slickdeals.net/f/19494783-shark-speedstyle-pro-hair-dryer-system-plus-storage-bag-159-99-shipping-included-costco-com?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -1963,7 +1932,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Shark"
   },
   {
-   "id": "Hip2Save:572991822",
+   "id": "Hip2Save:4802184095",
    "source": "Hip2Save",
    "title": "MAREE Deep Hydration Conditioner Only $5.58 Shipped on Amazon (Reg. $30)",
    "url": "https://hip2save.com/deals/maree-beauty-products/",
@@ -1976,7 +1945,7 @@
    "store_url": "https://www.amazon.com/s?k=MAREE+Deep+Hydration+Conditioner"
   },
   {
-   "id": "Hip2Save:5169853653",
+   "id": "Hip2Save:7015481074",
    "source": "Hip2Save",
    "title": "Sephora Sun Safety Kit Just $39 + FREE Same-Day Delivery",
    "url": "https://hip2save.com/deals/sephora-favorites-sun-safety-kit/",
@@ -1989,7 +1958,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Sun+Safety+Kit"
   },
   {
-   "id": "Hip2Save:3927799916",
+   "id": "Hip2Save:6192578896",
    "source": "Hip2Save",
    "title": "Sam\u2019s Club Instant Savings on Sol de Janeiro, Drunk Elephant, & More (Today Only!)",
    "url": "https://hip2save.com/deals/sams-club-beauty/",
@@ -2004,7 +1973,7 @@
    "store_url": null
   },
   {
-   "id": "Slickdeals:824151377",
+   "id": "Slickdeals:4406924580",
    "source": "Slickdeals",
    "title": "SINGER Heavy Duty 8832 Sewing Machine $139.99 in store $149.99 Shipped ( After $40 off ) @ COSTCO",
    "url": "https://slickdeals.net/f/19470639-singer-heavy-duty-8832-sewing-machine-139-99-in-store-149-99-shipped-after-40-off-costco?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2021,7 +1990,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=SINGER+Heavy+Duty+Sewing"
   },
   {
-   "id": "Hip2Save:7961144094",
+   "id": "Hip2Save:494889382",
    "source": "Hip2Save",
    "title": "Did You Know You Can Get Your Eyebrows Trimmed for Free at ULTA? Here\u2019s How!",
    "url": "https://hip2save.com/deals/benefit-brow-bar/",
@@ -2034,7 +2003,7 @@
    "store_url": "https://www.ulta.com/search?query=Did+You+Know+You"
   },
   {
-   "id": "Hip2Save:3829048411",
+   "id": "Hip2Save:3183066463",
    "source": "Hip2Save",
    "title": "Discounted Gift Cards on Staples.com | Chipotle, ULTA, Cheesecake Factory, & More",
    "url": "https://hip2save.com/deals/staples-discounted-gift-cards/",
@@ -2047,7 +2016,7 @@
    "store_url": "https://www.ulta.com/search?query=Discounted+Gift+Cards+Staples"
   },
   {
-   "id": "Hip2Save:445016792",
+   "id": "Hip2Save:9227184170",
    "source": "Hip2Save",
    "title": "Last Chance: Up to 50% Off ULTA Spring Haul Sale (NYX, Touchland, & More)",
    "url": "https://hip2save.com/deals/ulta-spring-haul/",
@@ -2068,7 +2037,7 @@
    "store_url": "https://www.ulta.com/search?query=NYX"
   },
   {
-   "id": "Hip2Save:4337904466",
+   "id": "Hip2Save:9574892907",
    "source": "Hip2Save",
    "title": "Beautiful by Drew 4-Quart Dutch Oven Only $34.74 on Walmart.com (Reg. $60)",
    "url": "https://hip2save.com/deals/beautiful-by-drew-dutch-oven/",
@@ -2081,7 +2050,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Quart"
   },
   {
-   "id": "Hip2Save:6271815433",
+   "id": "Hip2Save:4164549076",
    "source": "Hip2Save",
    "title": "Beauty of Joseon Skincare from $11 Shipped on Amazon",
    "url": "https://hip2save.com/deals/beauty-of-joseon/",
@@ -2094,7 +2063,7 @@
    "store_url": "https://www.amazon.com/s?k=Beauty+Joseon+Skincare+from"
   },
   {
-   "id": "Hip2Save:1283768930",
+   "id": "Hip2Save:5339190031",
    "source": "Hip2Save",
    "title": "50% Off Sally Beauty Hair Styling Tools | Airstyler, Wavers, Hair Dryers, & More!",
    "url": "https://hip2save.com/deals/sally-beauty-hair-styling-tools/",
@@ -2111,7 +2080,7 @@
    "store_url": "https://www.sallybeauty.com/search?q=Sally+Beauty+Hair+Styling"
   },
   {
-   "id": "Hip2Save:4026426787",
+   "id": "Hip2Save:5031735799",
    "source": "Hip2Save",
    "title": "Julep\u00a0Eyeshadow Sticks from $6.75 Shipped on Amazon (Reg. $18)",
    "url": "https://hip2save.com/deals/julep-beauty-products/",
@@ -2124,7 +2093,7 @@
    "store_url": "https://www.amazon.com/s?k=Julep+Eyeshadow+Sticks+from"
   },
   {
-   "id": "Hip2Save:7328577028",
+   "id": "Hip2Save:1925944365",
    "source": "Hip2Save",
    "title": "Up to 55% Off First Aid Beauty on Amazon | KP Bump Eraser Body Scrub Only $13.60 Shipped (Reg. $30)",
    "url": "https://hip2save.com/deals/first-aid-beauty/",
@@ -2143,7 +2112,7 @@
    "store_url": "https://www.amazon.com/s?k=First+Aid+Beauty"
   },
   {
-   "id": "Hip2Save:5550202038",
+   "id": "Hip2Save:3718534160",
    "source": "Hip2Save",
    "title": "Gluten Free Amazon Deals: Simple Mills Cookies & Crackers from $3.54 Shipped",
    "url": "https://hip2save.com/deals/simple-mills-crackers/",
@@ -2156,7 +2125,7 @@
    "store_url": "https://www.amazon.com/s?k=Gluten+Amazon+Simple+Mills"
   },
   {
-   "id": "Hip2Save:1633237482",
+   "id": "Hip2Save:2700089879",
    "source": "Hip2Save",
    "title": "40% Off MCoBeauty on Target.com | Fragrance Mist Only $12",
    "url": "https://hip2save.com/deals/mco-beauty/",
@@ -2173,7 +2142,7 @@
    "store_url": "https://www.target.com/s?searchTerm=MCoBeauty+Target+com+Fragrance"
   },
   {
-   "id": "Hip2Save:9924063621",
+   "id": "Hip2Save:1597626341",
    "source": "Hip2Save",
    "title": "Today ONLY: 50% Off Peter Thomas Roth Skincare on Sephora.com",
    "url": "https://hip2save.com/deals/peter-thomas-roth-skincare/",
@@ -2190,7 +2159,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Peter+Thomas+Roth+Skincare"
   },
   {
-   "id": "Hip2Save:4615707309",
+   "id": "Hip2Save:5656743853",
    "source": "Hip2Save",
    "title": "GO! Target Deal Days Start NOW for Circle 360 Members!",
    "url": "https://hip2save.com/deals/target-deal-days/",
@@ -2203,7 +2172,7 @@
    "store_url": "https://www.target.com/s?searchTerm=GO+Target+Days+Start"
   },
   {
-   "id": "Hip2Save:5380725861",
+   "id": "Hip2Save:7286136719",
    "source": "Hip2Save",
    "title": "Bluey x Caboodles Set w/ Beauty Items Just $15.50 on Walmart.com (Reg. $28) | Fun Easter Gift",
    "url": "https://hip2save.com/deals/bluey-x-caboodles/",
@@ -2216,7 +2185,7 @@
    "store_url": "https://www.walmart.com/search?q=Bluey+x+Caboodles+Set"
   },
   {
-   "id": "Hip2Save:8358062020",
+   "id": "Hip2Save:4042248008",
    "source": "Hip2Save",
    "title": "Have You Heard? MAC Cosmetics Are Now Available at Sephora & Kohl\u2019s!",
    "url": "https://hip2save.com/deals/sephora-mac/",
@@ -2231,7 +2200,7 @@
    "store_url": "https://www.sephora.com/search?keyword=MAC"
   },
   {
-   "id": "Hip2Save:7283290354",
+   "id": "Hip2Save:6453767858",
    "source": "Hip2Save",
    "title": "Beautiful by Drew Barrymore Stand Mixers from $44.96 on Walmart.com (Reg. $75)",
    "url": "https://hip2save.com/deals/beautiful-by-drew-barrymore-stand-mixer/",
@@ -2244,7 +2213,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Barrymore"
   },
   {
-   "id": "Hip2Save:8568740139",
+   "id": "Hip2Save:3322497519",
    "source": "Hip2Save",
    "title": "Best March 2026 Sales: Free Ice Cream, 50% Off Beauty, Amazon\u2019s Big Spring Event, & More!",
    "url": "https://hip2save.com/deals/march-sales/",
@@ -2261,7 +2230,7 @@
    "store_url": "https://www.amazon.com/s?k=Best+March+Sales+Ice"
   },
   {
-   "id": "Hip2Save:8482929073",
+   "id": "Hip2Save:2325960378",
    "source": "Hip2Save",
    "title": "Over $26 Worth of Beauty Products Under $6 After Target Gift Card",
    "url": "https://hip2save.com/deals/target-beauty-gift-card/",
@@ -2274,7 +2243,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Over+Worth+Beauty+Products"
   },
   {
-   "id": "Hip2Save:2895229227",
+   "id": "Hip2Save:1490790908",
    "source": "Hip2Save",
    "title": "Viral I\u2019m MEME Makeup Now at Target (Get on The \u201cFast Beauty\u201d Trend!)",
    "url": "https://hip2save.com/deals/im-meme-makeup/",
@@ -2287,7 +2256,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Viral+I+m+MEME"
   },
   {
-   "id": "Hip2Save:155546321",
+   "id": "Hip2Save:7322917445",
    "source": "Hip2Save",
    "title": "Stack Savings on Pet Supplies & Treats with Amazon Subscribe & Save Deals",
    "url": "https://hip2save.com/deals/amazon-subscribe-and-save-pet-deals/",
@@ -2300,7 +2269,7 @@
    "store_url": "https://www.amazon.com/s?k=Stack+Savings+Pet+Supplies"
   },
   {
-   "id": "Hip2Save:3400313418",
+   "id": "Hip2Save:2363035581",
    "source": "Hip2Save",
    "title": "Mini Lip Balm Tumbler 3-Pack Only $5.99 on Target.com (Teen Easter Basket Stuffer!)",
    "url": "https://hip2save.com/deals/taste-beauty-lip-balm/",
@@ -2313,7 +2282,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Mini+Lip+Balm+Tumbler"
   },
   {
-   "id": "Hip2Save:2495947286",
+   "id": "Hip2Save:817195059",
    "source": "Hip2Save",
    "title": "FREE Shipping on Any ULTA Order | Hot Buys on Sweet & Shimmer, Sol de Janeiro & More",
    "url": "https://hip2save.com/deals/ulta-free-shipping/",
@@ -2328,7 +2297,7 @@
    "store_url": "https://www.ulta.com/search?query=Sol+De+Janeiro"
   },
   {
-   "id": "Hip2Save:3265326652",
+   "id": "Hip2Save:5287700709",
    "source": "Hip2Save",
    "title": "50% Off Sephora Sale | Clinique, tarte, Lancome & More from $9",
    "url": "https://hip2save.com/deals/sephora-sale/",
@@ -2351,7 +2320,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Clinique"
   },
   {
-   "id": "Hip2Save:9239308862",
+   "id": "Hip2Save:9796144229",
    "source": "Hip2Save",
    "title": "Up to 50% Off OLLY Vitamins on Amazon (Sleep, Skin, Beauty, Hair, & More!)",
    "url": "https://hip2save.com/deals/olly-vitamins/",
@@ -2368,7 +2337,7 @@
    "store_url": "https://www.amazon.com/s?k=OLLY+Vitamins+Amazon+Sleep"
   },
   {
-   "id": "Hip2Save:7281356647",
+   "id": "Hip2Save:5146185313",
    "source": "Hip2Save",
    "title": "Sally Beauty Sale: Up to 50% Off Hair Care, Tools, & More!",
    "url": "https://hip2save.com/deals/sally-beauty-sale/",
@@ -2387,7 +2356,7 @@
    "store_url": "https://www.sallybeauty.com/search?q=Sally+Beauty+Hair+Care"
   },
   {
-   "id": "Slickdeals:6935328674",
+   "id": "Slickdeals:8494133785",
    "source": "Slickdeals",
    "title": "Costco Members: Missha First Essence Toner 5.07 fl oz and Night Repair Ampoule Cream 1.69 fl oz $32.99",
    "url": "https://slickdeals.net/f/19208266-costco-members-missha-first-essence-toner-5-07-fl-oz-and-night-repair-ampoule-cream-1-69-fl-oz-32-99?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2402,7 +2371,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Essence"
   },
   {
-   "id": "Hip2Save:9499423059",
+   "id": "Hip2Save:9862965100",
    "source": "Hip2Save",
    "title": "Up to 75% Off Sally\u2019s Beauty Supply Clearance \u2013 Prices Start at 79\u00a2",
    "url": "https://hip2save.com/deals/sallys-beauty-clearance/",
@@ -2421,7 +2390,7 @@
    "store_url": "https://www.sallybeauty.com/search?q=Sally+s+Beauty+Supply"
   },
   {
-   "id": "Hip2Save:6537461598",
+   "id": "Hip2Save:1277397601",
    "source": "Hip2Save",
    "title": "Ardell Lashes BOGO Free + Extra Savings at Sally Beauty (Under $4 a Pack!)",
    "url": "https://hip2save.com/deals/ardell-lashes/",
@@ -2440,7 +2409,7 @@
    "store_url": "https://www.sallybeauty.com/search?q=Ardell"
   },
   {
-   "id": "Hip2Save:7403110964",
+   "id": "Hip2Save:6910506913",
    "source": "Hip2Save",
    "title": "Beautiful by Drew 12-Piece Bakeware & Utensils Set Only $46.97 Shipped on Walmart.com",
    "url": "https://hip2save.com/deals/beautiful-by-drew-baking-set/",
@@ -2453,7 +2422,7 @@
    "store_url": "https://www.walmart.com/search?q=Beautiful+by+Drew+Piece"
   },
   {
-   "id": "Hip2Save:4220646277",
+   "id": "Hip2Save:263534915",
    "source": "Hip2Save",
    "title": "YSL Black Opium Fragrance Just $50.49 Shipped on ULTA.com (Reg. $100) + 2 FREE Gifts",
    "url": "https://hip2save.com/deals/ulta-fragrance/",
@@ -2468,7 +2437,7 @@
    "store_url": "https://www.ulta.com/search?query=OPI"
   },
   {
-   "id": "Hip2Save:8055649113",
+   "id": "Hip2Save:6642949508",
    "source": "Hip2Save",
    "title": "NEW Soda-Inspired Cocokind Olipop Lip Balm at ULTA",
    "url": "https://hip2save.com/deals/cocokind-lip-balm/",
@@ -2481,7 +2450,7 @@
    "store_url": "https://www.ulta.com/search?query=Soda+Inspired+Cocokind+Olipop"
   },
   {
-   "id": "Hip2Save:1587962522",
+   "id": "Hip2Save:6538057775",
    "source": "Hip2Save",
    "title": "Valentine\u2019s Day 12-Piece Beauty Gift Set Only $24.99 at CVS ($76 Value)",
    "url": "https://hip2save.com/deals/cvs-holiday-gift-set/",
@@ -2494,7 +2463,7 @@
    "store_url": "https://www.cvs.com/search?searchTerm=Valentine+s+Day+Piece"
   },
   {
-   "id": "Slickdeals:2291581695",
+   "id": "Slickdeals:5131517550",
    "source": "Slickdeals",
    "title": "Costco - 14kt Yellow Gold Pear Drop Pendant & Earrings",
    "url": "https://slickdeals.net/f/19158067-costco-14kt-yellow-gold-pear-drop-pendant-amp-earrings?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2507,7 +2476,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+14kt+Yellow+Gold"
   },
   {
-   "id": "Hip2Save:2643437842",
+   "id": "Hip2Save:4405383943",
    "source": "Hip2Save",
    "title": "Monopoly Deal: K-Pop Demon Hunters Game Now Available on Amazon",
    "url": "https://hip2save.com/deals/monopoly-deal-k-pop-demon-hunters/",
@@ -2520,7 +2489,7 @@
    "store_url": "https://www.amazon.com/s?k=Monopoly+K+Pop+Demon"
   },
   {
-   "id": "Hip2Save:5024240598",
+   "id": "Hip2Save:2543694871",
    "source": "Hip2Save",
    "title": "ULTA Jumbo Haircare Event: Save BIG on Biolage, Paul Mitchell, Olaplex, & More",
    "url": "https://hip2save.com/deals/ulta-jumbo-haircare-event/",
@@ -2540,7 +2509,7 @@
    "store_url": "https://www.ulta.com/search?query=Biolage"
   },
   {
-   "id": "Hip2Save:9017558532",
+   "id": "Hip2Save:3579804156",
    "source": "Hip2Save",
    "title": "Buy 3, Get 1 Free Sephora Collection Face Masks on Kohls.com",
    "url": "https://hip2save.com/deals/sephora-face-masks/",
@@ -2553,7 +2522,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Collection+Face+Masks"
   },
   {
-   "id": "Hip2Save:4755204219",
+   "id": "Hip2Save:242387778",
    "source": "Hip2Save",
    "title": "Valentino Perfume Travel Set Just $25 on ULTA.com (Reg. $50) \u2013 May Sell Out!",
    "url": "https://hip2save.com/deals/valentino-perfume/",
@@ -2566,7 +2535,7 @@
    "store_url": "https://www.ulta.com/search?query=Valentino+Perfume+Travel+Set"
   },
   {
-   "id": "Hip2Save:9167863029",
+   "id": "Hip2Save:2850623413",
    "source": "Hip2Save",
    "title": "Costco Clearance Finds = Hot Deals on StriVectin, Dearfoams, Timberland, & More!",
    "url": "https://hip2save.com/deals/costco-clearance/",
@@ -2585,7 +2554,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Strivectin"
   },
   {
-   "id": "Slickdeals:345951793",
+   "id": "Slickdeals:5642198154",
    "source": "Slickdeals",
    "title": "Costco Members: Mikasa Hamilton 120-piece Caterers Set. Free Shipping. $99.99",
    "url": "https://slickdeals.net/f/19124761-costco-members-mikasa-hamilton-120-piece-caterers-set-free-shipping-99-99?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2598,7 +2567,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Members+Mikasa+Hamilton"
   },
   {
-   "id": "Hip2Save:6016744732",
+   "id": "Hip2Save:6196831338",
    "source": "Hip2Save",
    "title": "Walmart Dropped NEW Beautiful by Drew Barrymore Patio Furniture and Decor",
    "url": "https://hip2save.com/deals/beautiful-by-drew-barrymore-patio/",
@@ -2611,7 +2580,7 @@
    "store_url": "https://www.walmart.com/search?q=Walmart+Dropped+Beautiful+by"
   },
   {
-   "id": "Hip2Save:3468861457",
+   "id": "Hip2Save:7070534090",
    "source": "Hip2Save",
    "title": "ULTA Love Your Skin Event Extended | 50% Off Clinique, Drunk Elephant, Kiehl\u2019s & More",
    "url": "https://hip2save.com/deals/ulta-love-your-skin-event/",
@@ -2630,7 +2599,7 @@
    "store_url": "https://www.ulta.com/search?query=Clinique"
   },
   {
-   "id": "Hip2Save:511689783",
+   "id": "Hip2Save:6258478555",
    "source": "Hip2Save",
    "title": "OPI Nail Polish Only $2 Each on ULTA.com (Reg. $12)",
    "url": "https://hip2save.com/deals/opi-nail-polish/",
@@ -2645,7 +2614,7 @@
    "store_url": "https://www.ulta.com/search?query=OPI"
   },
   {
-   "id": "Hip2Save:4514448842",
+   "id": "Hip2Save:6383988396",
    "source": "Hip2Save",
    "title": "Best Target Ad Deals This Week | FREE $30 Gift Card with Baby Care Purchase",
    "url": "https://hip2save.com/deals/next-week-target-ad/",
@@ -2662,7 +2631,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Best+Target+Ad+This"
   },
   {
-   "id": "Hip2Save:5721505363",
+   "id": "Hip2Save:1651120337",
    "source": "Hip2Save",
    "title": "Last Chance to Score Over 30% Off Le Monde Gourmand Perfumes on ULTA.com",
    "url": "https://hip2save.com/deals/le-monde-gourmand-fragrance/",
@@ -2679,7 +2648,7 @@
    "store_url": "https://www.ulta.com/search?query=Last+Chance+Score+Over"
   },
   {
-   "id": "Hip2Save:6344444699",
+   "id": "Hip2Save:5231441286",
    "source": "Hip2Save",
    "title": "Best Walgreens Next Week Ad Deals | 16\u00a2 Crest & Oral-B Dental Care Products + More!",
    "url": "https://hip2save.com/deals/walgreens-next-week-ad/",
@@ -2692,7 +2661,7 @@
    "store_url": "https://www.walgreens.com/search/results.jsp?Ntt=Best+Walgreens+Next+Week"
   },
   {
-   "id": "Hip2Save:9895747843",
+   "id": "Hip2Save:9243367921",
    "source": "Hip2Save",
    "title": "This Week\u2019s Best Diaper Deals \u2013 Lowest Prices at Walmart & Target!",
    "url": "https://hip2save.com/deals/diapers-on-sale/",
@@ -2705,7 +2674,7 @@
    "store_url": "https://www.walmart.com/search?q=This+Week+s+Best"
   },
   {
-   "id": "Hip2Save:8171381487",
+   "id": "Hip2Save:8088702253",
    "source": "Hip2Save",
    "title": "Poppy & Pout Lip Balm Just $4.97 on ULTA.com (Reg. $10)",
    "url": "https://hip2save.com/deals/poppy-pout-lip-balm/",
@@ -2718,7 +2687,7 @@
    "store_url": "https://www.ulta.com/search?query=Poppy+Pout+Lip+Balm"
   },
   {
-   "id": "Hip2Save:8536615095",
+   "id": "Hip2Save:9650130452",
    "source": "Hip2Save",
    "title": "Up to 40% Off Target Beauty Gift Sets | Wicked, Benefit, MAC, & More",
    "url": "https://hip2save.com/deals/target-beauty-gift-sets/",
@@ -2737,7 +2706,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Benefit"
   },
   {
-   "id": "Hip2Save:6141272878",
+   "id": "Hip2Save:6573858530",
    "source": "Hip2Save",
    "title": "ULTA Beauty Stocking Stuffers Just 77\u00a2 Each (Reg. $5) | Perfect for Gift Bags & Party Favors",
    "url": "https://hip2save.com/deals/ulta-beauty-stocking-stuffers/",
@@ -2750,7 +2719,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Beauty+Stocking+Stuffers"
   },
   {
-   "id": "Hip2Save:7346993424",
+   "id": "Hip2Save:2903229918",
    "source": "Hip2Save",
    "title": "Tarte, Sunday Riley, Kate Somerville, & More Up to 75% Off + Free Shipping on HSN",
    "url": "https://hip2save.com/deals/hsn-beauty-sale/",
@@ -2769,7 +2738,7 @@
    "store_url": null
   },
   {
-   "id": "Hip2Save:7215983541",
+   "id": "Hip2Save:4926391655",
    "source": "Hip2Save",
    "title": "Up to 60% Off Walgreens Beauty Gift Sets | No7, Gillette, Old Spice, + More",
    "url": "https://hip2save.com/deals/walgreens-gift-sets/",
@@ -2788,7 +2757,7 @@
    "store_url": "https://www.walgreens.com/search/results.jsp?Ntt=No7"
   },
   {
-   "id": "Hip2Save:1119003635",
+   "id": "Hip2Save:4271069662",
    "source": "Hip2Save",
    "title": "Price Drop! Target Exclusive ULTA Beauty Advent Calendar Just $27 (Valued at $139)",
    "url": "https://hip2save.com/deals/target-ulta-beauty-advent-calendar/",
@@ -2801,7 +2770,7 @@
    "store_url": "https://www.target.com/s?searchTerm=Price+Drop+Target+Exclusive"
   },
   {
-   "id": "Hip2Save:469863184",
+   "id": "Hip2Save:8647115115",
    "source": "Hip2Save",
    "title": "Sephora Beauty Advent Calendar Only $24.50 on Kohls.com ($79 Value!)",
    "url": "https://hip2save.com/deals/sephora-advent-calendars/",
@@ -2814,7 +2783,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Beauty+Advent+Calendar"
   },
   {
-   "id": "Hip2Save:6821735608",
+   "id": "Hip2Save:5456606610",
    "source": "Hip2Save",
    "title": "Gua Sha Jade Skincare Tools Just $4.99 on Amazon (Reg. $14) | Beauty Lovers Stocking Stuffer",
    "url": "https://hip2save.com/product-reviews/gua-sha-skincare-tool/",
@@ -2827,7 +2796,7 @@
    "store_url": "https://www.amazon.com/s?k=Gua+Sha+Jade+Skincare"
   },
   {
-   "id": "Hip2Save:6357520369",
+   "id": "Hip2Save:4260705834",
    "source": "Hip2Save",
    "title": "Score 50% Off ULTA Joybright Beauty Gift Sets (Teen Girl Stocking Stuffer!)",
    "url": "https://hip2save.com/deals/ulta-joybright/",
@@ -2844,7 +2813,7 @@
    "store_url": "https://www.ulta.com/search?query=Score+ULTA+Joybright+Beauty"
   },
   {
-   "id": "Slickdeals:1978050113",
+   "id": "Slickdeals:9345896378",
    "source": "Slickdeals",
    "title": "Costco Agio Oakland 7-piece Fire Outdoor Dining Set + free shipping $999",
    "url": "https://slickdeals.net/f/18971383-costco-agio-oakland-7-piece-fire-outdoor-dining-set-free-shipping-999?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2857,7 +2826,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Agio+Oakland+piece"
   },
   {
-   "id": "Hip2Save:9823632713",
+   "id": "Hip2Save:4743015595",
    "source": "Hip2Save",
    "title": "Up to 50% Off Ulta Big Holiday Sale | Makeup, Skincare + More!",
    "url": "https://hip2save.com/deals/ulta-big-holiday-sale/",
@@ -2876,7 +2845,7 @@
    "store_url": "https://www.ulta.com/search?query=Ulta+Big+Holiday+Makeup"
   },
   {
-   "id": "Hip2Save:1034161641",
+   "id": "Hip2Save:1940430530",
    "source": "Hip2Save",
    "title": "Floral Tumbler with Beauty Gift ONLY $10 at Walmart",
    "url": "https://hip2save.com/deals/hi-peach-layne-tumbler/",
@@ -2889,7 +2858,7 @@
    "store_url": "https://www.walmart.com/search?q=Floral+Tumbler+Beauty+Gift"
   },
   {
-   "id": "Hip2Save:121481179",
+   "id": "Hip2Save:8662675750",
    "source": "Hip2Save",
    "title": "Stocking Stuffer Alert: 60% Off Fenty Beauty at Sephora at Kohl\u2019s!",
    "url": "https://hip2save.com/deals/fenty-beauty-cosmetics/",
@@ -2908,7 +2877,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Fenty"
   },
   {
-   "id": "Slickdeals:4561893865",
+   "id": "Slickdeals:8806201305",
    "source": "Slickdeals",
    "title": "Costco 12/13-12/18 TOTO Drake 2-piece Elongated Toilet MS786154CEFGWS#01 $299.99",
    "url": "https://slickdeals.net/f/18964237-costco-12-13-12-18-toto-drake-2-piece-elongated-toilet-ms786154cefgws-01-299-99?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -2921,7 +2890,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+TOTO+Drake+piece"
   },
   {
-   "id": "Hip2Save:6903367717",
+   "id": "Hip2Save:819213056",
    "source": "Hip2Save",
    "title": "EXTRA 20% Off Gift Sets at Kohl\u2019s Sephora | Drunk Elephant, Glow Recipe, Rare Beauty + More!",
    "url": "https://hip2save.com/deals/sephora-beauty-gift-sets/",
@@ -2940,7 +2909,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Rare+Beauty"
   },
   {
-   "id": "Hip2Save:7264598490",
+   "id": "Hip2Save:7868808239",
    "source": "Hip2Save",
    "title": "ULTA Beauty Advent Calendar Sale \u2013 Mini Brands Just $14.99 (Reg. $40)",
    "url": "https://hip2save.com/deals/ulta-beauty-advent-calendar/",
@@ -2957,7 +2926,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Beauty+Advent+Calendar"
   },
   {
-   "id": "Hip2Save:4528797582",
+   "id": "Hip2Save:6913874543",
    "source": "Hip2Save",
    "title": "WOW! Ulta Beauty Boxes Only $11.99 ($175 Value!)",
    "url": "https://hip2save.com/deals/ulta-beauty-box/",
@@ -2970,7 +2939,7 @@
    "store_url": "https://www.ulta.com/search?query=WOW+Ulta+Beauty+Boxes"
   },
   {
-   "id": "Hip2Save:9744841590",
+   "id": "Hip2Save:7398089568",
    "source": "Hip2Save",
    "title": "Last Chance to Shop ULTA Black Friday Sale: $16.99 Beauty Boxes, 50% Off Makeup + More!",
    "url": "https://hip2save.com/deals/ulta-black-friday/",
@@ -2989,7 +2958,7 @@
    "store_url": "https://www.ulta.com/search?query=Last+Chance+Shop+ULTA"
   },
   {
-   "id": "Slickdeals:6487721357",
+   "id": "Slickdeals:5426421832",
    "source": "Slickdeals",
    "title": "Costco Members: Boss RS-3 Bundle: BCB-30X Pedal Board/Carrycase, 3 Effects Pedals (TU-3 Tuner, DS-1 Distortion, SDE-3 Dual Digital Delay), & More $379.99 + Free Shipping",
    "url": "https://slickdeals.net/f/18850066-costco-members-boss-rs-3-bundle-bcb-30x-pedal-board-carrycase-3-effects-pedals-tu-3-tuner-ds-1-distortion-sde-3-dual-digital-delay-more-379-99-free-shipping?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -3002,7 +2971,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Members+Boss+RS"
   },
   {
-   "id": "Slickdeals:1393124198",
+   "id": "Slickdeals:2843871128",
    "source": "Slickdeals",
    "title": "Costco - Ulta Gift Card $240 for $200",
    "url": "https://slickdeals.net/f/18800461-costco-ulta-gift-card-240-for-200?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -3015,7 +2984,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Ulta+Gift+Card"
   },
   {
-   "id": "Slickdeals:8705179450",
+   "id": "Slickdeals:5602933184",
    "source": "Slickdeals",
    "title": "Costco Wholesale 2-Day Grocery Online Offer: Spend $125+ & Get $20 Off: Grocery & Household Essentials, Health & Personal Care, Home & Kitchen Items & More + Free Delivery",
    "url": "https://slickdeals.net/f/18797587-costco-wholesale-2-day-grocery-online-offer-spend-125-get-20-off-grocery-household-essentials-health-personal-care-home-kitchen-items-more-free-delivery?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -3032,7 +3001,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Costco+Wholesale+Day+Grocery"
   },
   {
-   "id": "Slickdeals:5689009393",
+   "id": "Slickdeals:9873675430",
    "source": "Slickdeals",
    "title": "Tresanti Norah 52.9\" Mantel with Electric Fireplace $300. Reg $500.  F/S from Costco.",
    "url": "https://slickdeals.net/f/18782959-tresanti-norah-52-9-mantel-with-electric-fireplace-300-reg-500-f-s-from-costco?utm_source=rss&utm_content=def&utm_medium=RSS2",
@@ -3045,7 +3014,7 @@
    "store_url": "https://www.costco.com/CatalogSearch?dept=All&keyword=Tresanti+Norah+Mantel+Electric"
   },
   {
-   "id": "Hip2Save:4539298349",
+   "id": "Hip2Save:5380338096",
    "source": "Hip2Save",
    "title": "ULTA Mini Brands Key Ring w/ Mini Beauty Replica Just $8 Each When You Buy 2!",
    "url": "https://hip2save.com/deals/ulta-mini-brands/",
@@ -3058,7 +3027,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Mini+Brands+Key"
   },
   {
-   "id": "Hip2Save:5464228030",
+   "id": "Hip2Save:5956479796",
    "source": "Hip2Save",
    "title": "New Tree Hut x Peanuts Collab at Ulta | Scoop Up Scrubs, Shave Oil & More",
    "url": "https://hip2save.com/deals/tree-hut-peanuts/",
@@ -3073,7 +3042,7 @@
    "store_url": "https://www.ulta.com/search?query=Tree+Hut"
   },
   {
-   "id": "Hip2Save:2986172484",
+   "id": "Hip2Save:8443700104",
    "source": "Hip2Save",
    "title": "NEW ULTA Beauty Pi\u00f1ata w/ 10 Surprises Only $18",
    "url": "https://hip2save.com/deals/ulta-beauty-pinata/",
@@ -3086,7 +3055,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Beauty+Pi%C3%B1ata+w"
   },
   {
-   "id": "Hip2Save:1049116912",
+   "id": "Hip2Save:3544260506",
    "source": "Hip2Save",
    "title": "Save on New Squishmallows Fragrance at ULTA & Score a FREE Plush!",
    "url": "https://hip2save.com/deals/squishmallows-fragrance/",
@@ -3099,7 +3068,7 @@
    "store_url": "https://www.ulta.com/search?query=Save+Squishmallows+Fragrance+ULTA"
   },
   {
-   "id": "Hip2Save:6719931684",
+   "id": "Hip2Save:8440407108",
    "source": "Hip2Save",
    "title": "*HOT* Sephora SPF 30 Daily Mineral Sunscreen Only $5",
    "url": "https://hip2save.com/deals/sephora-sunscreen/",
@@ -3112,7 +3081,7 @@
    "store_url": "https://www.sephora.com/search?keyword=HOT+Sephora+SPF+Daily"
   },
   {
-   "id": "Hip2Save:59839310",
+   "id": "Hip2Save:3389211901",
    "source": "Hip2Save",
    "title": "Buy 2 ULTA Lip Stains for $9 Each & Score a FREE 9-Piece Gift Set!",
    "url": "https://hip2save.com/deals/ulta-beauty-lip-stain/",
@@ -3129,7 +3098,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Lip+Stains+Each"
   },
   {
-   "id": "Hip2Save:6576399914",
+   "id": "Hip2Save:514520110",
    "source": "Hip2Save",
    "title": "Kopari Shimmer Sunscreen Only $21 on ULTA.com (Reg. $42)",
    "url": "https://hip2save.com/deals/kopari-beauty/",
@@ -3142,7 +3111,7 @@
    "store_url": "https://www.ulta.com/search?query=Kopari+Shimmer+Sunscreen+ULTA"
   },
   {
-   "id": "Hip2Save:9905392217",
+   "id": "Hip2Save:2529265542",
    "source": "Hip2Save",
    "title": "75% Off Billy Jealousy Grooming on Amazon & Ulta | Pomade Only $4.50 Shipped (Reg. $18)",
    "url": "https://hip2save.com/deals/billy-jealousy-grooming-products/",
@@ -3159,7 +3128,7 @@
    "store_url": "https://www.amazon.com/s?k=Billy+Jealousy+Grooming+Amazon"
   },
   {
-   "id": "Hip2Save:5448818945",
+   "id": "Hip2Save:9147674807",
    "source": "Hip2Save",
    "title": "Over 50% Off Morphe Makeup on ULTA.com",
    "url": "https://hip2save.com/deals/morphe-makeup/",
@@ -3178,7 +3147,7 @@
    "store_url": "https://www.ulta.com/search?query=Morphe"
   },
   {
-   "id": "Hip2Save:4671169607",
+   "id": "Hip2Save:9026683088",
    "source": "Hip2Save",
    "title": "Truly Beauty Body Polishes & Serum from $6 on Ulta.com (Regularly $33)",
    "url": "https://hip2save.com/deals/truly-beauty/",
@@ -3193,7 +3162,7 @@
    "store_url": "https://www.ulta.com/search?query=Truly"
   },
   {
-   "id": "Hip2Save:5220323092",
+   "id": "Hip2Save:369863978",
    "source": "Hip2Save",
    "title": "ULTA National Lash Day Sale | Up to 50% Off Essence, It Cosmetics, Lancome & More",
    "url": "https://hip2save.com/deals/ulta-national-lash-day-sale/",
@@ -3216,7 +3185,7 @@
    "store_url": "https://www.ulta.com/search?query=Essence"
   },
   {
-   "id": "Hip2Save:208312480",
+   "id": "Hip2Save:4994427466",
    "source": "Hip2Save",
    "title": "Up to 50% Off Sephora National Lash Day Sale + Free Shipping & Samples",
    "url": "https://hip2save.com/deals/sephora-national-lash-day-sale/",
@@ -3235,7 +3204,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+National+Lash+Day"
   },
   {
-   "id": "Hip2Save:8235748437",
+   "id": "Hip2Save:1693552063",
    "source": "Hip2Save",
    "title": "Versace Bright Crystal Perfume Just $32.78 Shipped on Amazon (You\u2019d Pay $92 at ULTA!)",
    "url": "https://hip2save.com/deals/versace-perfume/",
@@ -3248,7 +3217,7 @@
    "store_url": "https://www.amazon.com/s?k=Versace+Bright+Crystal+Perfume"
   },
   {
-   "id": "Hip2Save:5394546719",
+   "id": "Hip2Save:4007647391",
    "source": "Hip2Save",
    "title": "50% Off Sephora Skin Care + Free Shipping | Peter Thomas Roth Products from $19 Shipped!",
    "url": "https://hip2save.com/deals/sephora-skin-care/",
@@ -3265,7 +3234,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Skin+Care+Shipping"
   },
   {
-   "id": "Hip2Save:4225743501",
+   "id": "Hip2Save:2408326294",
    "source": "Hip2Save",
    "title": "Up to 55% Off Wicked Beauty at Ulta | Nail Polish, Makeup Bags, & More!",
    "url": "https://hip2save.com/deals/ulta-wicked/",
@@ -3282,7 +3251,7 @@
    "store_url": "https://www.ulta.com/search?query=Wicked+Beauty+Ulta+Nail"
   },
   {
-   "id": "Hip2Save:6977048817",
+   "id": "Hip2Save:9946268955",
    "source": "Hip2Save",
    "title": "Same Day Delivery Gifts from Walmart, Sephora, Target, Walgreens, & Sam\u2019s Club",
    "url": "https://hip2save.com/deals/same-day-delivery-gifts/",
@@ -3295,7 +3264,7 @@
    "store_url": "https://www.walmart.com/search?q=Same+Day+Delivery+Gifts"
   },
   {
-   "id": "Hip2Save:6654169294",
+   "id": "Hip2Save:2946234224",
    "source": "Hip2Save",
    "title": "Score 6 Essence Beauty Products for ONLY $17.57 w/ Stackable Ulta Promos (Under $3 Each)",
    "url": "https://hip2save.com/deals/essence-beauty/",
@@ -3310,7 +3279,7 @@
    "store_url": "https://www.ulta.com/search?query=Essence"
   },
   {
-   "id": "Hip2Save:2284078119",
+   "id": "Hip2Save:9950911386",
    "source": "Hip2Save",
    "title": "GO! ULTA Cyber Monday Sale | Up to 50% Off Tarte, Urban Decay, Morphe, & More",
    "url": "https://hip2save.com/deals/ulta-cyber-monday/",
@@ -3333,7 +3302,7 @@
    "store_url": "https://www.ulta.com/search?query=Morphe"
   },
   {
-   "id": "Hip2Save:3110904612",
+   "id": "Hip2Save:2528247871",
    "source": "Hip2Save",
    "title": "50% Off NYX x Home Alone Collab at Ulta | Cheap Stocking Stuffers!",
    "url": "https://hip2save.com/deals/nyx-home-alone/",
@@ -3352,7 +3321,7 @@
    "store_url": "https://www.ulta.com/search?query=NYX"
   },
   {
-   "id": "Hip2Save:1529826304",
+   "id": "Hip2Save:4547775439",
    "source": "Hip2Save",
    "title": "ULTA National Brow Day Deals | Up to 50% off Tarte, Urban Decay, It Cosmetics & More",
    "url": "https://hip2save.com/deals/ulta-brow-day/",
@@ -3373,7 +3342,7 @@
    "store_url": "https://www.ulta.com/search?query=It+Cosmetics"
   },
   {
-   "id": "Hip2Save:6491329827",
+   "id": "Hip2Save:8453758812",
    "source": "Hip2Save",
    "title": "Buy 1, Get 1 40% Off ULTA Skincare | I Dew Care, La Roche-Posay & More!",
    "url": "https://hip2save.com/deals/ulta-skincare/",
@@ -3392,7 +3361,7 @@
    "store_url": "https://www.ulta.com/search?query=La+Roche-Posay"
   },
   {
-   "id": "Hip2Save:2542355339",
+   "id": "Hip2Save:537487510",
    "source": "Hip2Save",
    "title": "Peach & Lily Retinal For All Renewing Serum Just $27.50 on ULTA.com (Reg. $55)",
    "url": "https://hip2save.com/deals/peach-lily-serum/",
@@ -3407,7 +3376,7 @@
    "store_url": "https://www.ulta.com/search?query=Peach+%26+Lily"
   },
   {
-   "id": "Hip2Save:4358806489",
+   "id": "Hip2Save:1759094371",
    "source": "Hip2Save",
    "title": "Sephora Color Shifter Mini Eyeshadow Palette Only $5 on Kohls.com",
    "url": "https://hip2save.com/deals/sephora-eyeshadow-palette/",
@@ -3420,7 +3389,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Color+Shifter+Mini"
   },
   {
-   "id": "Hip2Save:7974824932",
+   "id": "Hip2Save:6312445147",
    "source": "Hip2Save",
    "title": "THREE Nailtopia Disney 100 Nail Polishes Only $11.50 on Ulta.com (Reg. $30)",
    "url": "https://hip2save.com/deals/nailtopia-nail-polish/",
@@ -3435,7 +3404,7 @@
    "store_url": "https://www.ulta.com/search?query=OPI"
   },
   {
-   "id": "Hip2Save:3943096420",
+   "id": "Hip2Save:7529474353",
    "source": "Hip2Save",
    "title": "Free Blume Skincare Acne Patches After Rebate at ULTA",
    "url": "https://hip2save.com/deals/blume-skincare/",
@@ -3448,7 +3417,7 @@
    "store_url": "https://www.ulta.com/search?query=Blume+Skincare+Acne+Patches"
   },
   {
-   "id": "Hip2Save:3444360042",
+   "id": "Hip2Save:3159103174",
    "source": "Hip2Save",
    "title": "WOW! Bed Head Curling Wand Only $8.25 on ULTA.com (Reg. $33) | Creates Easy Waves!",
    "url": "https://hip2save.com/deals/bed-head-curling-wand/",
@@ -3461,7 +3430,7 @@
    "store_url": "https://www.ulta.com/search?query=WOW+Bed+Head+Curling"
   },
   {
-   "id": "Hip2Save:4095684109",
+   "id": "Hip2Save:1762590500",
    "source": "Hip2Save",
    "title": "50% Off Carol\u2019s Daughter Goddess Strength Hair Care on ULTA.com | Shampoo, Conditioner, & More",
    "url": "https://hip2save.com/deals/carols-daughter-shampoo-conditioner/",
@@ -3478,7 +3447,7 @@
    "store_url": "https://www.ulta.com/search?query=Carol+s+Daughter+Goddess"
   },
   {
-   "id": "Hip2Save:8650387087",
+   "id": "Hip2Save:6308068157",
    "source": "Hip2Save",
    "title": "50% Off IT Cosmetics Makeup Brushes on ULTA.com",
    "url": "https://hip2save.com/deals/it-cosmetics-makeup-brushes/",
@@ -3497,7 +3466,7 @@
    "store_url": "https://www.ulta.com/search?query=It+Cosmetics"
   },
   {
-   "id": "Hip2Save:3209132283",
+   "id": "Hip2Save:9517074260",
    "source": "Hip2Save",
    "title": "Hempz Body Butter 8oz Jar Only $4.75 on Ulta.com (Regularly $19)",
    "url": "https://hip2save.com/deals/hempz-lotion/",
@@ -3512,7 +3481,7 @@
    "store_url": "https://www.ulta.com/search?query=Hempz"
   },
   {
-   "id": "Hip2Save:2696035881",
+   "id": "Hip2Save:161442521",
    "source": "Hip2Save",
    "title": "IT Cosmetics Bye Bye Lines Serum 2-Pack from $20.98 Shipped (They\u2019re $35 Each at ULTA!)",
    "url": "https://hip2save.com/deals/it-cosmetics-qvc/",
@@ -3527,7 +3496,7 @@
    "store_url": "https://www.ulta.com/search?query=It+Cosmetics"
   },
   {
-   "id": "Hip2Save:3944629834",
+   "id": "Hip2Save:6673494600",
    "source": "Hip2Save",
    "title": "FREE Sephora Birthday Gift | Choose from 4 Beauty Bundles!",
    "url": "https://hip2save.com/deals/sephora-birthday-gift/",
@@ -3544,7 +3513,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Birthday+Gift+Choose"
   },
   {
-   "id": "Hip2Save:9725555854",
+   "id": "Hip2Save:6394442390",
    "source": "Hip2Save",
    "title": "Urban Decay x Smiley Naked Mini Eyeshadow Palette Just $8.25 on ULTA.com (Regularly $33)",
    "url": "https://hip2save.com/deals/urban-decay-eyeshadow-palettes/",
@@ -3559,7 +3528,7 @@
    "store_url": "https://www.ulta.com/search?query=Urban+Decay"
   },
   {
-   "id": "Hip2Save:7546377306",
+   "id": "Hip2Save:7071328115",
    "source": "Hip2Save",
    "title": "ULTA Beauty Clean Ingredient Sampler Kit Only $19 (Regularly $40) \u2013 Including Monday Hair Care!",
    "url": "https://hip2save.com/deals/ulta-beauty-sampler-kit/",
@@ -3572,7 +3541,7 @@
    "store_url": "https://www.ulta.com/search?query=ULTA+Beauty+Clean+Ingredient"
   },
   {
-   "id": "Hip2Save:2333210684",
+   "id": "Hip2Save:6688105788",
    "source": "Hip2Save",
    "title": "*HOT* ULTA $12 Mascara Sale | Benefit, Lanc\u00f4me, Too Faced & More!",
    "url": "https://hip2save.com/deals/mascara-sale/",
@@ -3593,7 +3562,7 @@
    "store_url": "https://www.ulta.com/search?query=Benefit"
   },
   {
-   "id": "Hip2Save:1240769278",
+   "id": "Hip2Save:5651177475",
    "source": "Hip2Save",
    "title": "Get Ready for the Next ULTA Gorgeous Hair Event in May 2024",
    "url": "https://hip2save.com/deals/ulta-hair-event/",
@@ -3610,7 +3579,7 @@
    "store_url": "https://www.ulta.com/search?query=Ready+Next+ULTA+Gorgeous"
   },
   {
-   "id": "Hip2Save:4780963749",
+   "id": "Hip2Save:6239714097",
    "source": "Hip2Save",
    "title": "Urban Decay Wild Greens Eyeshadow Palette Only $19.47 on Sephora.com (Regularly $44)",
    "url": "https://hip2save.com/deals/urban-decay-wild-greens/",
@@ -3625,7 +3594,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Urban+Decay"
   },
   {
-   "id": "Hip2Save:1927431050",
+   "id": "Hip2Save:9870164836",
    "source": "Hip2Save",
    "title": "Buy Two, Get One FREE Dashing Divas Nail Strips on ULTA.com | Tons of Cute Styles Available",
    "url": "https://hip2save.com/deals/dashing-divas-nails/",
@@ -3638,7 +3607,7 @@
    "store_url": "https://www.ulta.com/search?query=Two+Dashing+Divas+Nail"
   },
   {
-   "id": "Hip2Save:3692804277",
+   "id": "Hip2Save:8281166870",
    "source": "Hip2Save",
    "title": "Baby Foot Exfoliant Peel $16.50 on ULTA.com (Regularly $25)",
    "url": "https://hip2save.com/deals/baby-foot-exfoliant-peel/",
@@ -3651,7 +3620,7 @@
    "store_url": "https://www.ulta.com/search?query=Baby+Foot+Exfoliant+Peel"
   },
   {
-   "id": "Hip2Save:8719041560",
+   "id": "Hip2Save:7748343644",
    "source": "Hip2Save",
    "title": "50% Off Nudestix by Ulta Beauty Products at Target",
    "url": "https://hip2save.com/deals/nudestix/",
@@ -3668,7 +3637,7 @@
    "store_url": "https://www.ulta.com/search?query=Nudestix+by+Ulta+Beauty"
   },
   {
-   "id": "Hip2Save:954613736",
+   "id": "Hip2Save:3928409350",
    "source": "Hip2Save",
    "title": "40% Off Dry Shampoo on Ulta.com | Batiste, Eva NYC & More",
    "url": "https://hip2save.com/deals/ulta-dry-shampoo/",
@@ -3687,7 +3656,7 @@
    "store_url": "https://www.ulta.com/search?query=Batiste"
   },
   {
-   "id": "Hip2Save:62340717",
+   "id": "Hip2Save:4875245612",
    "source": "Hip2Save",
    "title": "Up to 65% Off Sephora Collection Makeup Brushes & Tools on Kohls.com",
    "url": "https://hip2save.com/deals/sephora-collection-makeup-tools/",
@@ -3704,7 +3673,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Collection+Makeup+Brushes"
   },
   {
-   "id": "Hip2Save:6523478951",
+   "id": "Hip2Save:5124798456",
    "source": "Hip2Save",
    "title": "Sephora Favorites Holiday Sets from $25.60 at Kohl\u2019s (Over $70 Value!)",
    "url": "https://hip2save.com/deals/kohls-sephora-favorites/",
@@ -3717,7 +3686,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Favorites+Holiday+Sets"
   },
   {
-   "id": "Hip2Save:6346285051",
+   "id": "Hip2Save:4092033500",
    "source": "Hip2Save",
    "title": "Sephora Makeup Palette w/ 60 Eyeshadows, 16 Lip Colors, & More JUST $21 on Kohls.com (Regularly $36)",
    "url": "https://hip2save.com/deals/sephora-palette/",
@@ -3730,7 +3699,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Makeup+Palette+w"
   },
   {
-   "id": "Hip2Save:820136906",
+   "id": "Hip2Save:8682192736",
    "source": "Hip2Save",
    "title": "*HOT* ULTA Caboodles ONLY $12.99 | Over $133 Worth of Cosmetics",
    "url": "https://hip2save.com/deals/ulta-caboodles/",
@@ -3743,7 +3712,7 @@
    "store_url": "https://www.ulta.com/search?query=HOT+ULTA+Caboodles+Over"
   },
   {
-   "id": "Hip2Save:733293268",
+   "id": "Hip2Save:2021178598",
    "source": "Hip2Save",
    "title": "My New Favorite Sephora Eyeshadow Palette + More Kohl\u2019s Holiday Makeup Buys!",
    "url": "https://hip2save.com/deals/kohls-holiday-makeup/",
@@ -3756,7 +3725,7 @@
    "store_url": "https://www.sephora.com/search?keyword=My+Favorite+Sephora+Eyeshadow"
   },
   {
-   "id": "Hip2Save:9603279791",
+   "id": "Hip2Save:1482572705",
    "source": "Hip2Save",
    "title": "Sephora Return Policy 101 | Everything to Know About Returning Sephora Purchases",
    "url": "https://hip2save.com/tips/sephora-return-policy/",
@@ -3769,7 +3738,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Return+Policy+Everything"
   },
   {
-   "id": "Hip2Save:3993240205",
+   "id": "Hip2Save:2533837528",
    "source": "Hip2Save",
    "title": "Sephora Favorites 5-Piece Mini Mascara Set w/ Full-Sized Mascara Voucher Only $29 Shipped",
    "url": "https://hip2save.com/tips/sephora-favorites/",
@@ -3782,7 +3751,7 @@
    "store_url": "https://www.sephora.com/search?keyword=Sephora+Favorites+Piece+Mini"
   },
   {
-   "id": "Hip2Save:4056388946",
+   "id": "Hip2Save:474371348",
    "source": "Hip2Save",
    "title": "**Stay Prepared for ULTA\u2019s 21 Days of Beauty!",
    "url": "https://hip2save.com/tips/ulta-21-days-of-beauty/",
@@ -3799,7 +3768,7 @@
    "store_url": "https://www.ulta.com/search?query=Stay+Prepared+ULTA+s"
   },
   {
-   "id": "Hip2Save:3746987478",
+   "id": "Hip2Save:2171539098",
    "source": "Hip2Save",
    "title": "Score 50% Off MAC Cosmetics x Stranger Things on ULTA.com | Eyeshadow Palettes, Lipglass & More",
    "url": "https://hip2save.com/deals/mac-cosmetics-stranger-things/",
@@ -3816,6 +3785,55 @@
    ],
    "retailer": "Ulta",
    "store_url": "https://www.ulta.com/search?query=MAC"
+  },
+  {
+   "id": "Hip2Save:4083357653",
+   "source": "Hip2Save",
+   "title": "Ulta Beauty x Steffi Lynn Makeup Sets from $12.50 (Regularly $16) + Free Tote Bag w/ Purchase",
+   "url": "https://hip2save.com/deals/ulta-beauty-steffi-lynn/",
+   "created": 1653868082,
+   "score": 0,
+   "brands": [],
+   "types": [
+    "gwp"
+   ],
+   "type_labels": [
+    "Free gift"
+   ],
+   "retailer": "Ulta",
+   "store_url": "https://www.ulta.com/search?query=Ulta+Beauty+x+Steffi"
+  },
+  {
+   "id": "Hip2Save:7699232631",
+   "source": "Hip2Save",
+   "title": "Free 10-Piece Gift Set w/ $19.50 ULTA Beauty Purchase | Great Easter Basket Fillers for Teens",
+   "url": "https://hip2save.com/deals/ulta-beauty-gift-sets/",
+   "created": 1644937245,
+   "score": 0,
+   "brands": [],
+   "types": [
+    "gwp"
+   ],
+   "type_labels": [
+    "Free gift"
+   ],
+   "retailer": "Ulta",
+   "store_url": "https://www.ulta.com/search?query=Piece+Gift+Set+w"
+  },
+  {
+   "id": "Hip2Save:4129540674",
+   "source": "Hip2Save",
+   "title": "Morphe Mickey & Friends Palette Only $12.50 on ULTA.com (Regularly $32)",
+   "url": "https://hip2save.com/deals/morphe-eyeshadow-palettes-ulta/",
+   "created": 1643940536,
+   "score": 0,
+   "brands": [
+    "Morphe"
+   ],
+   "types": [],
+   "type_labels": [],
+   "retailer": "Ulta",
+   "store_url": "https://www.ulta.com/search?query=Morphe"
   }
  ],
  "stacks": [
@@ -3845,9 +3863,9 @@
     }
    ],
    "item_ids": [
-    "Slickdeals:4371251562",
-    "Hip2Save:4076242000",
-    "Slickdeals:6064522617"
+    "Slickdeals:2446420789",
+    "Hip2Save:7012399567",
+    "Slickdeals:9862030532"
    ],
    "latest": 1788708199
   },
@@ -3872,8 +3890,8 @@
     }
    ],
    "item_ids": [
-    "Hip2Save:4076242000",
-    "Slickdeals:6319299585"
+    "Hip2Save:7012399567",
+    "Slickdeals:8107636387"
    ],
    "latest": 1788699420
   },
@@ -3898,7 +3916,7 @@
     }
    ],
    "item_ids": [
-    "Hip2Save:4076242000"
+    "Hip2Save:7012399567"
    ],
    "latest": 1788699420
   },
@@ -3923,9 +3941,30 @@
     }
    ],
    "item_ids": [
-    "Hip2Save:7689635179"
+    "Hip2Save:5881679166"
    ],
    "latest": 1788487200
+  },
+  {
+   "brand": "Sol De Janeiro",
+   "count": 3,
+   "types": [],
+   "type_labels": [],
+   "retailers": [
+    "Ulta"
+   ],
+   "shop": [
+    {
+     "retailer": "Ulta",
+     "url": "https://www.ulta.com/search?query=Sol+De+Janeiro"
+    }
+   ],
+   "item_ids": [
+    "Slickdeals:9729162541",
+    "Slickdeals:9449328023",
+    "Slickdeals:4220662894"
+   ],
+   "latest": 1788766144
   }
  ]
 }
